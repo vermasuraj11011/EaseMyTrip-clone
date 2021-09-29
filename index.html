@@ -28,7 +28,7 @@
             <div id="fromBox" class="searchfield flexIt">
                 <input type="text" name="" id="from" placeholder="From">
                 <div id="swap">
-                    <img src="icons/change.png" alt="" class="">
+                    <img src="icons/change.png" alt="" class="" id="">
                 </div>
             </div>
             <div id="toBox" class="searchfield">
@@ -36,13 +36,14 @@
             </div>
             <div id="depart" class="searchfield point">
                 <input type="date" id="departDate" class="point">
+                <!-- <input type="date" name="" id="y"> -->
             </div>
             <div id="arrive" class="searchfield point">
-                <input type="date" id="arriveDate" class="point" value="0" placeholder="Return">
+                <input type="date" id="arriveDate" class="point" value="0" placeholder="Return" disabled>
             </div>
             <div id="travel" class="point">
                 <div id="travellers" class="searchfield flexIt droptravel">
-                    <label for="" class="labl point">1 Traveller(s)</label>
+                    <label for="" id="travellerCount" class="labl point">1 Traveller(s)</label>
                     <img src="icons/down.png" alt="" class="icon">
                 </div>
                 <div id="travellerOption" class="options">
@@ -52,9 +53,9 @@
                             <label for="" class="passAge">(12+ yrs)</label>
                         </div>
                         <div class="passCount flexIt">
-                            <button>-</button>
+                            <button id="adult_del">-</button>
                             <label for="" id="adultCount">1</label>
-                            <button>+</button>
+                            <button id="adult_add">+</button>
                         </div>
                     </div>
                     <div class="flexpass">
@@ -63,9 +64,9 @@
                             <label for="" class="passAge">(2-12 yrs)</label>
                         </div>
                         <div class="passCount flexIt">
-                            <button>-</button>
+                            <button id="children_del">-</button>
                             <label for="" id="childrenCount">0</label>
-                            <button>+</button>
+                            <button id="children_add">+</button>
                         </div>
                     </div>
                     <div class="flexpass">
@@ -74,14 +75,14 @@
                             <label for="" class="passAge">(below 2 yrs)</label>
                         </div>
                         <div class="passCount flexIt">
-                            <button>-</button>
+                            <button id="infant_del">-</button>
                             <label for="" id="infantCount">0</label>
-                            <button>+</button>
+                            <button id="infant_add">+</button>
                         </div>
                     </div> 
                     <br>
                     <div>
-                        <button class="classDone">Done</button>
+                        <button id="travellerCountDone" class="classDone">Done</button>
                     </div>
                 </div>
             </div>
@@ -92,20 +93,20 @@
                 </div>
                 <div id="classOption" class="options">
                     <div>
-                        <input class="point" type="radio" name="classes" id="economy" value="">
+                        <input class="point" type="radio" name="classes" id="economy" value="1" checked>
                         <label class="point" for="economy">Economy</label>
                     </div>
                     <div>
-                        <input class="point" type="radio" name="classes" id="prem" value="">
+                        <input class="point" type="radio" name="classes" id="prem" value="2">
                         <label class="point" for="prem">Prem.Economy</label>
                     </div>
                     <div>
-                        <input class="point" type="radio" name="classes" id="business" value="">
+                        <input class="point" type="radio" name="classes" id="business" value="3">
                         <label class="point" for="business">Business</label>
                     </div> 
                     <br>
                     <div>
-                        <button class="classDone">Done</button>
+                        <button id="classSubmit" class="classDone">Done</button>
                     </div>
                 </div>
             </div>
@@ -120,13 +121,28 @@
         </div>
         <div id="search_end">
             <div id="travellerType">
-                <ul id="ttype">
-                    <li>Defence Forces</li>
-                    <li>Students</li>
-                    <li>Senior Citizens</li>
-                    <li>Doctors & Nurses</li>
-                    <li>Train Waitlisted</li>
-                </ul>
+                <div id="ttype">
+                    <div class="flexMe">
+                        <input type="radio" name="travl" id="defence" class="trvl" value="1">
+                        <label class="trvl_type" for="defence">Defence Forces</label>
+                    </div>
+                    <div class="flexMe">
+                        <input type="radio" name="travl" id="student" class="trvl" value="2">
+                        <label class="trvl_type" for="student">Students</label>
+                    </div>
+                    <div class="flexMe">
+                        <input type="radio" name="travl" id="senior" class="trvl" value="3">
+                        <label class="trvl_type" for="senior">Senior Citizens</label>
+                    </div>
+                    <div class="flexMe">
+                        <input type="radio" name="travl" id="doctor" class="trvl" value="4">
+                        <label class="trvl_type" for="doctor">Doctors & Nurses</label>
+                    </div>
+                    <div class="flexMe">
+                        <input type="radio" name="travl" id="train" class="trvl" value="5">
+                        <label class="trvl_type" for="train">Train Waitlisted</label>
+                    </div>
+                </div>
             </div>
             <div>
 
@@ -135,3 +151,4 @@
     </div>
 </body>
 </html>
+<script type="" src="scripts/index.js"></script>

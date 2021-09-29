@@ -3,9 +3,8 @@
     padding: 0;
     margin: 0;
 }
-
 #search {
-    background-color: #43A6F0;
+    background-color: #42A5F0;
     padding: 2vw;
     color: white;
 }
@@ -41,6 +40,10 @@
     background-color: white;
     color: #1853A2;
 }
+#one {
+    background-color: white;
+    color: #1853A2;
+}
 #swap {
     border-radius: 50%;
     padding: 3px;
@@ -59,6 +62,9 @@
     width: 100%;
     height: 100%;
 }
+#arriveDate {
+    color: gray;
+}
 .searchfield, .searchfield input {
     display: flex;
     background-color: white;
@@ -69,14 +75,8 @@
     font-size: 15px;
     padding-inline: 7px;
 }
-#search_box_wrap {
-    border-radius: 10px;
-    /* width: fit-content;
-    position: fixed;
-    overflow-x: hidden;
-    overflow-y: visible; */
-}
 #search_box {
+    margin-top: 5px;
     width: fit-content;
     overflow-y: visible;
     border-radius: 5px;
@@ -91,7 +91,9 @@
 #from, #to {
     width: 150px;
 }
-
+#arrive {
+    height: 60px;
+}
 .options {
     background-color: white;
     line-height: 22px;
@@ -118,7 +120,8 @@
     z-index: 900;
     height: fit-content;
     overflow: hidden;
-    width: 200px;
+    width: 220px;
+    display: none;
 }
 #travel{
     width: 150px;
@@ -203,17 +206,41 @@
 #searchFlight button:hover {
     background-color: #DA5200;
 }
-
 .droptravel {
     display: flex;
     justify-content: space-between;
     width: 150px;
     align-items: center;
 }
-
 .searchfield {
     border: 1px solid gainsboro;
 }
 .point {
     cursor: pointer;
+}
+#search_end {
+    margin-top: 15px;
+    font-size: 16px;
+}
+#ttype {
+    display: flex;
+    align-items: center;
+}
+.trvl_type {
+    margin-right: 30px;
+    padding-left: 10px; 
+    cursor: pointer;
+}
+.flexMe{
+    display: flex;
+    align-items: center;
+}
+.trvl {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    content: url('../icons/uncheck.png');
+}
+.trvl:checked {
+    content: url('../icons/check.png');
 }
