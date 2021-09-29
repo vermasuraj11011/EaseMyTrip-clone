@@ -10,8 +10,8 @@ let infantCount = document.getElementById('infantCount');
 let travellerCount = document.getElementById('travellerCount');
 let add = [document.getElementById('adult_add'), document.getElementById('children_add'), document.getElementById('infant_add')];
 let del = [document.getElementById('adult_del'), document.getElementById('children_del'), document.getElementById('infant_del')];
-let special = document.getElementsByName('travl');
-let travelClass = document.getElementsByName('flightClass');
+let flight_class = document.getElementsByName('classes');
+let travelClass = document.getElementById('flightClass');
 let swap = document.getElementById('swap');
 let classOption = document.getElementById('classOption');
 let travellerOption = document.getElementById('travellerOption');
@@ -56,10 +56,39 @@ finalSearch.addEventListener('click', () => {
 travellerCountDone.addEventListener('click', () => {
     travellerOption.style.display = 'none';
 });
+
 classDone.addEventListener('click', () => {
+    flight_class.forEach(element => {
+        if (element.checked === true) {
+            travelClass.innerText = element.value;
+        }
+    });
     classOption.style.display = 'none';
 });
+
+traveller_click.addEventListener('click', () => {
+    if (travellerOption.style.display === 'none') {
+        classOption.style.display = 'none';
+        travellerOption.style.display = 'block';
+    } else {
+        travellerOption.style.display = 'none';
+    }
+});
+
+class_click.addEventListener('click', () => {
+    if (classOption.style.display === 'none') {
+        classOption.style.display = 'block';
+        travellerOption.style.display = 'none';
+    } else {
+        classOption.style.display = 'none';
+    }
+});
+
 add[0].addEventListener('click', () => {
+    if (totalCount === 9) {
+        alert("More than 9 Passenger's can not travel.");
+        return;
+    }
     adultCount.innerText = Number(adultCount.innerText) + 1;
     totalCount++;
     travellerCount.innerText = totalCount + " Traveller(s)";
@@ -73,6 +102,10 @@ del[0].addEventListener('click', () => {
     travellerCount.innerText = totalCount + " Traveller(s)";
 });
 add[1].addEventListener('click', () => {
+    if (totalCount === 9) {
+        alert("More than 9 Passenger's can not travel.");
+        return;
+    }
     childrenCount.innerText = Number(childrenCount.innerText) + 1;
     totalCount++;
     travellerCount.innerText = totalCount + " Traveller(s)";
@@ -86,6 +119,10 @@ del[1].addEventListener('click', () => {
     travellerCount.innerText = totalCount + " Traveller(s)";
 });
 add[2].addEventListener('click', () => {
+    if (totalCount === 9) {
+        alert("More than 9 Passenger's can not travel.");
+        return;
+    }
     infantCount.innerText = Number(infantCount.innerText) + 1;
     totalCount++;
     travellerCount.innerText = totalCount + " Traveller(s)";
@@ -135,26 +172,6 @@ function roundTrip() {
 
 document.getElementById('arrive').addEventListener('click', roundTrip);
 
-traveller_click.addEventListener('click', () => {
-    if (travellerOption.style.display === 'none') {
-        classOption.style.display = 'none';
-        travellerOption.style.display = 'block';
-    } else {
-        classOption.style.display = 'block';
-        travellerOption.style.display = 'none';
-    }
-});
-
-class_click.addEventListener('click', () => {
-    if (classOption.style.display === 'none') {
-        classOption.style.display = 'block';
-        travellerOption.style.display = 'none';
-    } else {
-        classOption.style.display = 'none';
-        travellerOption.style.display = 'block';
-    }
-});
-
 function radioRender(...radio) {
     radio.forEach(element => {
         if (element.checked) {
@@ -179,6 +196,5 @@ function swapFromTo() {
 }
 
 swap.addEventListener('click', swapFromTo);
-
 
 
