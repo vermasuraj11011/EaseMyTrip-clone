@@ -12,5 +12,126 @@
 </head>
 <body>
     <!-- Prottay -->
+    <div id="search">
+        <div id="search_head">
+            <img src="icons/flight.jpg" alt="">
+            <h1>Search Lowest Airfare</h1>
+        </div>
+        <div id="search_catagory">
+            <ul>
+                <li id="one" class="search_cat">One-Way</li>
+                <li id="round" class="search_cat">Round-Way</li>
+                <li id="multi" class="search_cat">Multi-City</li>
+            </ul>
+        </div>
+        <div id="search_box" class="flexIt">
+            <div id="fromBox" class="searchfield flexIt">
+                <input type="text" name="" id="from" placeholder="From">
+                <div id="swap">
+                    <img src="icons/change.png" alt="" class="">
+                </div>
+            </div>
+            <div id="toBox" class="searchfield">
+                <input type="text" name="" id="to" placeholder="To">
+            </div>
+            <div id="depart" class="searchfield point">
+                <input type="date" id="departDate" class="point">
+            </div>
+            <div id="arrive" class="searchfield point">
+                <input type="date" id="arriveDate" class="point" value="0" placeholder="Return">
+            </div>
+            <div id="travel" class="point">
+                <div id="travellers" class="searchfield flexIt droptravel">
+                    <label for="" class="labl point">1 Traveller(s)</label>
+                    <img src="icons/down.png" alt="" class="icon">
+                </div>
+                <div id="travellerOption" class="options">
+                    <div class="flexpass">
+                        <div class="pass">
+                            <label for="" class="passType">Adult</label>
+                            <label for="" class="passAge">(12+ yrs)</label>
+                        </div>
+                        <div class="passCount flexIt">
+                            <button>-</button>
+                            <label for="" id="adultCount">1</label>
+                            <button>+</button>
+                        </div>
+                    </div>
+                    <div class="flexpass">
+                        <div class="pass">
+                            <label for="" class="passType">Children</label>
+                            <label for="" class="passAge">(2-12 yrs)</label>
+                        </div>
+                        <div class="passCount flexIt">
+                            <button>-</button>
+                            <label for="" id="childrenCount">0</label>
+                            <button>+</button>
+                        </div>
+                    </div>
+                    <div class="flexpass">
+                        <div class="pass">
+                            <label for="" class="passType">Infants</label>
+                            <label for="" class="passAge">(below 2 yrs)</label>
+                        </div>
+                        <div class="passCount flexIt">
+                            <button>-</button>
+                            <label for="" id="infantCount">0</label>
+                            <button>+</button>
+                        </div>
+                    </div> 
+                    <br>
+                    <div>
+                        <button class="classDone">Done</button>
+                    </div>
+                </div>
+            </div>
+            <div id="travelClass" class="point">
+                <div id="travellerClass" class="searchfield flexIt droptravel">
+                    <label for="" class="labl point">Economy</label>
+                    <img src="icons/down.png" alt="" class="icon">
+                </div>
+                <div id="classOption" class="options">
+                    <div>
+                        <input class="point" type="radio" name="classes" id="economy" value="">
+                        <label class="point" for="economy">Economy</label>
+                    </div>
+                    <div>
+                        <input class="point" type="radio" name="classes" id="prem" value="">
+                        <label class="point" for="prem">Prem.Economy</label>
+                    </div>
+                    <div>
+                        <input class="point" type="radio" name="classes" id="business" value="">
+                        <label class="point" for="business">Business</label>
+                    </div> 
+                    <br>
+                    <div>
+                        <button class="classDone">Done</button>
+                    </div>
+                </div>
+            </div>
+            <div id="searchFlight" class="point">
+                <button>
+                    <img src="icons/search.svg" alt="" class="icon">
+                    <div>
+                        SEARCH
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div id="search_end">
+            <div id="travellerType">
+                <ul id="ttype">
+                    <li>Defence Forces</li>
+                    <li>Students</li>
+                    <li>Senior Citizens</li>
+                    <li>Doctors & Nurses</li>
+                    <li>Train Waitlisted</li>
+                </ul>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
