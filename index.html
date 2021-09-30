@@ -8,9 +8,122 @@
     <link rel="stylesheet" href="styles/index.css">
 
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-    <title>Bood Flights, Hotels, Bus Tickets & Holidays - EaseMyTrip.com</title>
+    <link
+     rel="stylesheet"
+     href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+     crossorigin="anonymous"
+   />
+    <title>Book Flights, Hotels, Bus Tickets & Holidays - EaseMyTrip.com</title>
 </head>
 <body>
+
+<!-- Instruction -->
+
+
+<!-- offer section -->
+    <div id="offerSection">
+
+        <div id="offerSectionNav">
+            <div>
+                <h3>Exclusive Offers</h3>
+            </div>
+            
+
+            <div id="offerSectionNavLinks">
+                <ul>
+                    <li><a href="">BEST OFFERS</a></li>
+                    <li><a href="">FLIGHT</a></li>
+                    <li><a href="">HOTEL</a></li>
+                    <li><a href="">BUS</a></li>
+                </ul>
+            </div>
+
+           <div id="offerSectionNavScrollButton" >
+
+            <a href="">View All Offers</a>
+                <div class="slideButton">
+                    <i class="fas fa-chevron-left btnIcon" onclick='removeId()'></i>
+                    <i class="fas fa-chevron-right btnIcon" onclick='addId()'></i>
+                </div>
+           </div>
+
+        </div>
+        
+        <!-- <div id="offerSectionData">
+
+        </div> -->
+
+        <div class="container">
+
+            <input type="radio" name="dot" id="on">
+            <input type="radio" name="dot" id="tw">
+            
+            <div class="main-card">
+        
+              <div class="cards">
+                <div class="card" >
+        
+                  <div  class="content" id="offerSectionData">
+                  </div>
+        
+                </div>
+              </div>
+        
+            </div>
+        
+          </div>
+
+
+    </div>
+
+<!-- Travel Section -->
+
+    <div id="offerSection">
+
+        <div id="travelBlogSectionNav">
+            <h3>Travel Blog</h3>
+
+           
+
+           <div id="travelBlogs">
+            <a href="">View All Blog</a>
+            <div id="travelBlogbutton" class="slideButton">
+                <i class="fas fa-chevron-left btnIcon" onclick='removeIdtravel()'></i>
+                <i class="fas fa-chevron-right btnIcon" onclick='addIdtravel()'></i>
+            </div>
+            
+           </div>
+
+        </div>
+
+
+        <div class="container">
+
+            <input type="radio" name="dot" id="one">
+            <input type="radio" name="dot" id="twe">
+            
+            <div class="main-card">
+        
+              <div class="cards">
+                <div class="card" >
+        
+                  <div  class="content" id="travelBlogsData">
+                  </div>
+        
+                </div>
+              </div>
+        
+            </div>
+        
+          </div>
+
+    </div>
+
+
+    
     
 </body>
 </html>
+
+<script src="./scripts/index.js"></script>

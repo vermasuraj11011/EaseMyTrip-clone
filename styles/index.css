@@ -1,0 +1,185 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Open Sans', sans-serif, Tahoma, Arial;
+}
+
+
+
+#offerSectionNav{
+    width: 67%;
+    display: grid;
+    grid-template-columns: 22% 53% 25%;
+    margin: auto; 
+}
+
+#offerSectionNav h3{
+    margin-top: 12%;
+    font-size: 28px;
+}
+
+
+#offerSectionNavLinks ul{
+    display: flex;
+    list-style: none;
+    font-size: 16px;
+    height: 28px;
+}
+
+#offerSectionNavLinks li{
+   margin-top: 6.3%;
+   margin-left: 4%;
+   padding-bottom: 5%;
+   font-weight: 600;
+   color: black;
+}
+
+#offerSectionNavLinks a{
+    text-decoration: none;
+    line-height: 9px;
+ }
+
+ #offerSectionNavLinks a:hover{
+    color: #ef6614 ;
+    border-bottom: 3px solid #ef6614;
+ }
+
+
+#offerSectionNavScrollButton{
+    margin-top: 12%;
+    margin-left: 19%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+#offerSection{
+    margin: auto;
+}
+
+#offerSectionData{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-top: 3%;
+    
+}
+
+.offerDetail{
+    display: grid;
+    grid-template-columns: 28% 68%;
+    padding: 2%;
+}
+
+.offerDetail h4{
+    margin: 0%;
+    margin-bottom: 4%;
+    font-size: 14px;
+    margin-left: 15%;
+}
+
+.offerDetail p{
+    margin: 0%;
+    font-size: 12px;
+    margin-left: 15%;
+}
+
+.offerDetailDate p{
+    margin: 0%;
+    float: right;
+    color: #7D7A7A;
+    font-size: 11px;
+    margin-top: 3%;
+    padding: 0.7%;
+    
+}
+.offerDetailMain{
+    width: 33%;
+    padding: 0.2%;
+    justify-content: space-between;
+    margin-left: 2%;
+    box-shadow: 0 0 7px rgb(0 0 0 / 20%);
+}
+#travelBlogSectionNav{
+    width: 67%;
+    display: grid;
+    margin: auto; 
+    grid-template-columns: 72% 28%;
+}
+
+#travelBlogSectionNav h3{
+    margin-top: 4%;
+    font-size: 28px;
+}
+#travelBlogs {
+    width: 100%;
+    margin-top: 12%;
+    margin-left: 29%;
+    display: grid;
+    grid-template-columns: 35% 33%;
+}
+
+
+#travelBlogbutton{
+    margin-left: 10%;
+}
+
+#travelBlogsData{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-top: 3%;
+
+}
+
+#travelBlogsData div{
+ padding: 0%;
+ border-radius: 5px;
+}
+
+#travelBlogsData p{
+    padding: 2%;
+}
+
+
+#travelBlogsData  img{
+   width: 100%;
+}
+
+
+.container{
+    max-width: 1130px;
+    width: 100%;
+    overflow: hidden;
+    padding: 5px 0px;
+    margin-left: 13.5%;
+  }
+
+  .container .main-card{
+    display: flex;
+    justify-content: space-evenly;
+    width: 199%;
+    transition: 2s;
+  }
+  #two:checked ~ .main-card{
+    margin-left: -100%;
+  }
+
+
+  input[type="radio"]{
+    display: none;
+  }
+
+  .slideButton{
+    box-shadow: 0 0 7px rgb(0 0 0 / 20%);
+    width: 49%;
+    justify-content: space-between;
+   
+    margin-top: 2%;
+    border-radius: 9px;
+    padding: 3%;
+  }
+  .btnIcon{
+    margin-left: 15%;
+    padding: 1%;
+    cursor: pointer;
+  }
