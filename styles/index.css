@@ -270,7 +270,7 @@
     overflow-y: auto;
     position: relative;
     border: 1px solid lightgray ;
-    padding: 8px;
+    padding-top: 8px;
     display: flex;
     flex-direction: column;
     display: none;
@@ -283,13 +283,12 @@
     height: 40px;
 }
 .topAuto {
-    text-align: right;
-    justify-content: right;
-}
-.topAuto > div {
-    width: fit-content;
+    float: right;
+    margin-bottom: 5px;
+    margin-right: 8px;
 }
 .autoFeed {
+    clear: both;
     padding-top: 3px;
     display: flex;
     border-left: 5px solid white;
@@ -297,6 +296,7 @@
     padding-left: 3px;
     padding-bottom: 2px;
     background-color: white;
+    cursor: pointer;
 }
 .autoFeed:hover {
     border-left: 5px solid #2F80ED;
@@ -311,6 +311,7 @@
     padding: 5px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .autoAirport {
     display: flex;

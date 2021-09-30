@@ -42,17 +42,19 @@ function query(from, to, depart, arrive, travellers, adults, children, infants, 
 from.addEventListener('click', () => {
     if (fromBox.style.display === "none") {
         fromBox.style.display = "block";
+        toBox.style.display = "none";
     } else {
         fromBox.style.display = "none";
     }
-})
+});
 to.addEventListener('click', () => {
     if (toBox.style.display === "none") {
         toBox.style.display = "block";
+        fromBox.style.display = "none";
     } else {
         toBox.style.display = "none";
     }
-})
+});
 
 finalSearch.addEventListener('click', () => {
 
@@ -62,6 +64,10 @@ finalSearch.addEventListener('click', () => {
     }
     if (to.value === "") {
         alert('Please enter valid destination city');
+        return;
+    }
+    if (depart.value === "") {
+        alert('Please enter valid departure date');
         return;
     }
     localStorage.setItem('searchQuery', JSON.stringify(new query(from.value, to.value, depart.value, arrive.value, totalCount, Number(adultCount.innerText), Number(childrenCount.innerText), Number(infantCount.innerText), travelClass.innerText, specialCitizen, trip)));
@@ -213,19 +219,115 @@ function swapFromTo() {
 
 swap.addEventListener('click', swapFromTo);
 
-async function searchAutoComplete(feed) {
-    let a = await fetch(`https://airportix.p.rapidapi.com/autocomplete/airport/`, {
-        "method": "POST",
-        "headers": {
-            "content-type": "application/x-www-form-urlencoded",
-            "x-rapidapi-host": "airportix.p.rapidapi.com",
-            "x-rapidapi-key": "e41ac5f444mshb544d722349d34cp12a1c9jsn14405c0bb667"
-        },
-        "body": {
-            "query": feed
-        }
-    });
-    let b = await a.json();
+let Airports = [
+    {
+        name: "Indira Gandhi International Airport",
+        city: "Delhi (DEL)",
+        country: "India"
+    },
+    {
+        name: "Bengaluru International Airport",
+        city: "Bangalore (BLR)",
+        country: "India"
+    },
+    {
+        name: "Chhatrapati Shivaji International Airport",
+        city: "Mumbai (BOM)",
+        country: "India"
+    },
+    {
+        name: "Netaji Subhash Chandra Bose International Airport",
+        city: "Kolkata (CCU)",
+        country: "India"
+    },
+    {
+        name: "Dabolim Goa International Airport",
+        city: "Goa (GOI)",
+        country: "India"
+    },
+    {
+        name: "Rajiv Gandhi International Airport",
+        city: "Hyderabad (HYD)",
+        country: "India"
+    },
+    {
+        name: "Madras, Chennai International Airport",
+        city: "Chennai (MMA)",
+        country: "India"
+    },
+    {
+        name: "Changi Airport",
+        city: "Singapore (SIN)",
+        country: "Singapore"
+    },
+    {
+        name: "Dubai International Airport",
+        city: "Dubai (DXB)",
+        country: "United Arab Emirates"
+    },
+    {
+        name: "Suvarnabhumi Airport",
+        city: "Bangkok (BKK)",
+        country: "Thailand"
+    },
+    {
+        name: "Tribhuvan International Airport",
+        city: "Kathmandu (KTM)",
+        country: "Nepal"
+    }
+];
+
+async function searchAutoComplete(destination, results, feed) {
+
+    if (feed === "") {
+
+        results.innerHTML = `<div class="topAuto">
+        <div class="flexMe">
+            <img src="icons/cities.PNG" id="cities" alt="">
+            <h4>Top Cities</h4>
+        </div>
+    </div>`;
+
+        Airports.forEach(element => {
+            let feedDiv = document.createElement('div');
+            feedDiv.className = "autoFeed";
+            feedDiv.innerHTML = `<div class="autoPlane">
+                <img src="icons/plane.png" class="autoImg" alt="">
+            </div>
+            <div class="autoDetails">
+                <h3 class="autoCity">${element.city}</h3>
+                <div class="autoAirport">
+                    <p class="autoAirportName">${element.name}</p>
+                    <p class="autoCountry">${element.country}</p>
+                </div>
+            </div>`;
+            feedDiv.addEventListener('click', () => {
+                destination.value = element.city;
+                results.style.display = "none";
+            });
+            results.appendChild(feedDiv);
+        });
+        
+    } else {
+        let a = await fetch(`https://airportix.p.rapidapi.com/autocomplete/airport/`, {
+            "method": "POST",
+            "headers": {
+                "content-type": "application/x-www-form-urlencoded",
+                "x-rapidapi-host": "airportix.p.rapidapi.com",
+                "x-rapidapi-key": "e41ac5f444mshb544d722349d34cp12a1c9jsn14405c0bb667"
+            },
+            "body": {
+                "query": feed
+            }
+        });
+        let b = await a.json();
+    }
+    
 
     
 }
+
+from.addEventListener('click', searchAutoComplete(from, fromBox, from.value));
+from.addEventListener('input', searchAutoComplete(from, fromBox, from.value));
+to.addEventListener('click', searchAutoComplete(to, toBox, to.value));
+to.addEventListener('input', searchAutoComplete(to, toBox, to.value));
