@@ -8,14 +8,27 @@
     <link rel="stylesheet" href="styles/index.css">
 
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link
+     rel="stylesheet"
+     href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+     crossorigin="anonymous"
+   />
     <title>Book Flights, Hotels, Bus Tickets & Holidays - EaseMyTrip.com</title>
 </head>
 <body>
 
+<!-- Instruction -->
+
+
+<!-- offer section -->
     <div id="offerSection">
 
         <div id="offerSectionNav">
-            <h3>Exclusive Offers</h3>
+            <div>
+                <h3>Exclusive Offers</h3>
+            </div>
+            
 
             <div id="offerSectionNavLinks">
                 <ul>
@@ -26,37 +39,84 @@
                 </ul>
             </div>
 
-           <div id="offerSectionNavScrollButton">
+           <div id="offerSectionNavScrollButton" >
+
             <a href="">View All Offers</a>
+                <div class="slideButton">
+                    <i class="fas fa-chevron-left btnIcon" onclick='removeId()'></i>
+                    <i class="fas fa-chevron-right btnIcon" onclick='addId()'></i>
+                </div>
            </div>
 
         </div>
         
-        <div id="offerSectionData">
+        <!-- <div id="offerSectionData">
 
-        </div>
+        </div> -->
+
+        <div class="container">
+
+            <input type="radio" name="dot" id="on">
+            <input type="radio" name="dot" id="tw">
+            
+            <div class="main-card">
+        
+              <div class="cards">
+                <div class="card" >
+        
+                  <div  class="content" id="offerSectionData">
+                  </div>
+        
+                </div>
+              </div>
+        
+            </div>
+        
+          </div>
 
 
     </div>
 
+<!-- Travel Section -->
 
     <div id="offerSection">
 
-        <div id="offerSectionNav">
+        <div id="travelBlogSectionNav">
             <h3>Travel Blog</h3>
 
            
 
            <div id="travelBlogs">
             <a href="">View All Blog</a>
+            <div id="travelBlogbutton" class="slideButton">
+                <i class="fas fa-chevron-left btnIcon" onclick='removeIdtravel()'></i>
+                <i class="fas fa-chevron-right btnIcon" onclick='addIdtravel()'></i>
+            </div>
+            
            </div>
 
         </div>
+
+
+        <div class="container">
+
+            <input type="radio" name="dot" id="one">
+            <input type="radio" name="dot" id="twe">
+            
+            <div class="main-card">
         
-        <div id="travelBlogsData">
-
-        </div>
-
+              <div class="cards">
+                <div class="card" >
+        
+                  <div  class="content" id="travelBlogsData">
+                  </div>
+        
+                </div>
+              </div>
+        
+            </div>
+        
+          </div>
 
     </div>
 
@@ -94,29 +154,29 @@
             promocode:""
         },
 
-        // {
-        //     img:"https://www.easemytrip.com/images/offer-img/invite_earn_hp.png",
-        //     title:"Invite & Earn",
-        //     detail:"Now Earn Money by Inviting Your Friends to EaseMyTrip Up to Rs. 2000 ",
-        //     date:"Start inviting now",
-        //     promocode:""
-        // },
+        {
+            img:"https://www.easemytrip.com/images/offer-img/invite_earn_hp.png",
+            title:"Invite & Earn",
+            detail:"Now Earn Money by Inviting Your Friends to EaseMyTrip Up to Rs. 2000 ",
+            date:"Start inviting now",
+            promocode:""
+        },
 
-        // {
-        //     img:"https://www.easemytrip.com/images/offer-img/EMTFirst_hp.png",
-        //     title:"New User Offer",
-        //     detail:"Register and Get Discount on Booking First Flight with Us",
-        //     date:"Valid till: 30th Sep, 2021",
-        //     promocode:"EMTFIRST"
-        // },
+        {
+            img:"https://www.easemytrip.com/images/offer-img/EMTFirst_hp.png",
+            title:"New User Offer",
+            detail:"Register and Get Discount on Booking First Flight with Us",
+            date:"Valid till: 30th Sep, 2021",
+            promocode:"EMTFIRST"
+        },
 
-        // {
-        //     img:"https://www.easemytrip.com/images/offer-img/hdfcemt_hp.png",
-        //     title:"HDFC Bank",
-        //     detail:"Grab Best Deals on Travel Using HDFC Bank Credit Cards",
-        //     date:"Valid till: 28th Sep, 2021",
-        //     promocode:"HDFCEMT"
-        // },
+        {
+            img:"https://www.easemytrip.com/images/offer-img/hdfcemt_hp.png",
+            title:"HDFC Bank",
+            detail:"Grab Best Deals on Travel Using HDFC Bank Credit Cards",
+            date:"Valid till: 28th Sep, 2021",
+            promocode:"HDFCEMT"
+        },
       
     ];
 
@@ -149,6 +209,35 @@
             date:"September 13, 2021",
             
         },
+
+        {
+            img:"https://www.easemytrip.com/images/offer-img/future-cloud-computing-hp.jpg",
+            detail:"The Role Of Cloud Computing In Shaping The Future Of The Travel Industry",
+            date:"September 6, 2021",
+            
+        },
+
+        {
+            img:"	https://www.easemytrip.com/images/offer-img/future-of-cruise-hp.jpg",
+            detail:"How Technology Will Help Cruise Lines Restart Operations Post-Pandemic",
+            date:"August 25, 2021",
+            
+        },
+
+        {
+            img:"https://www.easemytrip.com/images/offer-img/places-in-france-hp.jpg",
+            detail:"Discover Europe In A New Light With Our France Tourism Packages",
+            date:"August 19, 2021",
+            
+        },
+
+        {
+            img:"https://www.easemytrip.com/images/offer-img/cordelia-cruise-hp.jpg",
+            detail:"All You Need To Know About Cordelia Cruise",
+            date:"September 13, 2021",
+            
+        },
+        
 
     ]
 
@@ -183,10 +272,13 @@ let offerDiv = document.getElementById("offerSectionData");
             div2.append(h4,p1)
             bigdiv.append(div1,div2)
             bigdiv.classList.add("offerDetail");
+
             div3.append(p2)
             div3.classList.add("offerDetailDate");
+
             divMain.append(bigdiv,div3);
             divMain.classList.add("offerDetailMain");
+            
             offerDiv.append(divMain);
 
         });
@@ -234,4 +326,46 @@ let travelBlogDiv = document.getElementById("travelBlogsData");
    }
 
    showTravelData(travelBlog);
+
+   let but1 = document.getElementById("tw");
+    function addId(){
+
+      
+       but1.setAttribute('id','two')
+
+      but1.checked=true;
+
+     
+    }
+
+    function removeId(){
+
+      let but2 = document.getElementById("on");
+       but1.setAttribute('id','two')
+
+      but1.checked=false;
+
+      
+
+    }
+
+
+    let but3 = document.getElementById("twe");
+    function addIdtravel(){
+
+      
+       but3.setAttribute('id','two')
+
+      but3.checked=true;
+     
+    }
+
+    function removeIdtravel(){
+
+      let but4 = document.getElementById("one");
+       but3.setAttribute('id','two')
+
+      but3.checked=false;
+
+    }
 </script>
