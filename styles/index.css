@@ -1,20 +1,73 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Open Sans', sans-serif, Tahoma, Arial;
+
+* {
+	margin: 0%;
+	padding: 0%;
+	font-family: 'Open Sans', sans-serif, Tahoma, Arial;
+}
+/* Instruction Section */
+
+#InstructionMainDiv{
+    margin: auto;
+    text-align: center;
+    width: 71%;
+	font-size: 14px;
+}
+    
+
+#InstructionSubDiv {
+    display: flex;
+    grid-column-gap: 4%;
+}  
+
+#InstructionSubDiv div{
+    margin: auto;
+    padding: 1% 3.2%;
+    margin-top: 2%;
+    border-radius: 4px;
+}
+
+#InstructionSubDiv div:nth-child(1){
+background-color: #FFF3CD;
+border: 1px solid #f1dfab;
+}
+
+#InstructionSubDiv div:nth-child(2){
+    background-color: #D9EDF7;
+    border: 1px solid #bce8f1;
+}
+
+#InstructionMainDiv :last-child{
+    background-color: #D4EDDA;
+    border-color: #c3e6cb;
+    border-radius: 4px;
+}
+    
+#refundDiv{
+    border: solid black 0.5px;
+    margin: auto;
+    padding: 1%;
+    margin-top: 2%
+
 }
 
 
+/* Offer Section */
+
+#offerSection{
+    margin: auto;
+    width: 73%;
+    margin-top: 3%;
+}
 
 #offerSectionNav{
-    width: 67%;
+    width: 98%;
     display: grid;
-    grid-template-columns: 22% 53% 25%;
+    grid-template-columns: 30% 50% 20%;
     margin: auto; 
 }
 
+
 #offerSectionNav h3{
-    margin-top: 12%;
     font-size: 28px;
 }
 
@@ -24,12 +77,11 @@
     list-style: none;
     font-size: 16px;
     height: 28px;
+    margin-top: 2.3%
 }
 
 #offerSectionNavLinks li{
-   margin-top: 6.3%;
-   margin-left: 4%;
-   padding-bottom: 5%;
+   margin-right:3%;
    font-weight: 600;
    color: black;
 }
@@ -37,31 +89,27 @@
 #offerSectionNavLinks a{
     text-decoration: none;
     line-height: 9px;
- }
-
- #offerSectionNavLinks a:hover{
-    color: #ef6614 ;
-    border-bottom: 3px solid #ef6614;
- }
-
-
-#offerSectionNavScrollButton{
-    margin-top: 12%;
-    margin-left: 19%;
-    display: grid;
-    grid-template-columns: 60% 40%;
 }
 
-#offerSection{
-    margin: auto;
+#offerSectionNavLinks a:hover{
+    color: #ef6614 ;
+    border-bottom: 3px solid #ef6614;
+}
+
+#offerSectionNavScrollButton{
+    display: grid;
+    grid-template-columns: 68% 30%;
+}
+
+#allOfferLink{
+    margin-top: 8%;
 }
 
 #offerSectionData{
     display: flex;
     width: 100%;
     margin: auto;
-    margin-top: 3%;
-    
+    margin-top: 1%;  
 }
 
 .offerDetail{
@@ -96,39 +144,57 @@
     width: 33%;
     padding: 0.2%;
     justify-content: space-between;
-    margin-left: 2%;
+    margin: 0.5%;
     box-shadow: 0 0 7px rgb(0 0 0 / 20%);
 }
+
+.slideButton{
+    box-shadow: 0 0 7px rgb(0 0 0 / 20%);
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    border-radius: 9px;
+    height: 73%;
+}
+.btnIcon{
+    padding: 5%;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+/* Travel Section */
+
+#travelBlogSection{
+ width: 73%;
+ margin: auto;
+}
+
 #travelBlogSectionNav{
-    width: 67%;
+    width: 97%;
     display: grid;
     margin: auto; 
-    grid-template-columns: 72% 28%;
+    grid-template-columns: 80% 20%;
 }
 
 #travelBlogSectionNav h3{
-    margin-top: 4%;
     font-size: 28px;
 }
-#travelBlogs {
+
+#travelBlogScrollButton {
     width: 100%;
-    margin-top: 12%;
-    margin-left: 29%;
     display: grid;
-    grid-template-columns: 35% 33%;
+    grid-template-columns: 65% 32%;
 }
 
-
-#travelBlogbutton{
-    margin-left: 10%;
+#allBlogLink{
+    margin-top: 8%;
 }
 
 #travelBlogsData{
     display: flex;
     width: 100%;
     margin: auto;
-    margin-top: 3%;
-
+    margin-top: 1%;
 }
 
 #travelBlogsData div{
@@ -145,13 +211,17 @@
    width: 100%;
 }
 
+.travelBlogSlideButton{
+    height: 82%;
+}
+
 
 .container{
     max-width: 1130px;
     width: 100%;
     overflow: hidden;
-    padding: 5px 0px;
-    margin-left: 13.5%;
+    padding: 4px 0px;
+    margin: auto;
   }
 
   .container .main-card{
@@ -164,22 +234,11 @@
     margin-left: -100%;
   }
 
+  #three:checked ~ .main-card{
+    margin-left: -100%;
+  }
+
 
   input[type="radio"]{
     display: none;
-  }
-
-  .slideButton{
-    box-shadow: 0 0 7px rgb(0 0 0 / 20%);
-    width: 49%;
-    justify-content: space-between;
-   
-    margin-top: 2%;
-    border-radius: 9px;
-    padding: 3%;
-  }
-  .btnIcon{
-    margin-left: 15%;
-    padding: 1%;
-    cursor: pointer;
   }

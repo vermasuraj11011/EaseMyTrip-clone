@@ -17,19 +17,36 @@
     <title>Book Flights, Hotels, Bus Tickets & Holidays - EaseMyTrip.com</title>
 </head>
 <body>
+    <!-- Instruction -->
+    <div id="InstructionMainDiv">
 
-<!-- Instruction -->
+        <div id="InstructionSubDiv">
+            <div id="importantInfo">
+                <strong>Important Info:</strong> To cancel/claim refund or reschedule/modify your <br>booking. <a href="https://mybookings.easemytrip.com/" target="_blank" > click here</a>
+            </div>
+        
+            <div id="travelGuide">
+                <strong>Travel Guide:</strong> <a href="https://www.easemytrip.com/covid19-help.html" target="_blank" >Get latest information on airlines &amp; airports guidelines, <br>state-wise quarantine rules, travel checklists, web-checkin etc.</a>
+            </div>
+        </div>
 
+        
 
-<!-- offer section -->
+        <div id="refundDiv">
+            <strong>FREE Full Refund due to Medical Reasons:</strong> EaseMyTrip brings an extraordinary offer in these tough times!<br>
+                    Get full refund for domestic ticket in case you cancel it due to medical sickness. Best Part - There are ZERO extra charges for this service.  <a href="https://www.easemytrip.com/pdf/Domestic-Flight-Cancellation-Insurance.pdf" target="_blank" style="color: #2196f3;">(View Coverage)</a>
+        </div>
+
+    </div>
+    <!-- offer section -->
     <div id="offerSection">
-
+    
         <div id="offerSectionNav">
             <div>
                 <h3>Exclusive Offers</h3>
             </div>
-            
-
+    
+    
             <div id="offerSectionNavLinks">
                 <ul>
                     <li><a href="">BEST OFFERS</a></li>
@@ -38,86 +55,93 @@
                     <li><a href="">BUS</a></li>
                 </ul>
             </div>
+    
+            <div id="offerSectionNavScrollButton">
 
-           <div id="offerSectionNavScrollButton" >
-
-            <a href="">View All Offers</a>
+                <div id="allOfferLink">
+                    <a href="">View All Offers</a>
+                </div>
+    
                 <div class="slideButton">
                     <i class="fas fa-chevron-left btnIcon" onclick='removeId()'></i>
                     <i class="fas fa-chevron-right btnIcon" onclick='addId()'></i>
                 </div>
-           </div>
-
+    
+            </div>
+    
         </div>
-        
-        <!-- <div id="offerSectionData">
-
-        </div> -->
-
+    
         <div class="container">
-
+    
             <input type="radio" name="dot" id="on">
             <input type="radio" name="dot" id="tw">
-            
+    
             <div class="main-card">
-        
-              <div class="cards">
-                <div class="card" >
-        
-                  <div  class="content" id="offerSectionData">
-                  </div>
-        
+    
+                <div class="cards">
+                    <div class="card">
+    
+                        <div class="content" id="offerSectionData">
+                        </div>
+    
+                    </div>
                 </div>
-              </div>
-        
+    
             </div>
-        
-          </div>
-
-
+    
+        </div>
+    
+    
     </div>
 
-<!-- Travel Section -->
+    
 
-    <div id="offerSection">
+    <!-- Travel Section -->
 
+    <div id="travelBlogSection">
+    
         <div id="travelBlogSectionNav">
-            <h3>Travel Blog</h3>
 
-           
-
-           <div id="travelBlogs">
-            <a href="">View All Blog</a>
-            <div id="travelBlogbutton" class="slideButton">
-                <i class="fas fa-chevron-left btnIcon" onclick='removeIdtravel()'></i>
-                <i class="fas fa-chevron-right btnIcon" onclick='addIdtravel()'></i>
+            <div>
+                <h3>Travel Blog</h3>
             </div>
-            
-           </div>
-
-        </div>
-
-
-        <div class="container">
-
-            <input type="radio" name="dot" id="one">
-            <input type="radio" name="dot" id="twe">
-            
-            <div class="main-card">
-        
-              <div class="cards">
-                <div class="card" >
-        
-                  <div  class="content" id="travelBlogsData">
-                  </div>
-        
+    
+            <div id="travelBlogScrollButton">
+                
+                <div id="allBlogLink">
+                    <a href="">View All Blog</a>
                 </div>
-              </div>
-        
+                
+                <div id="travelBlogbutton" class="slideButton travelBlogSlideButton">
+                    <i class="fas fa-chevron-left btnIcon" onclick='removeIdtravel()'></i>
+                    <i class="fas fa-chevron-right btnIcon" onclick='addIdtravel()'></i>
+                </div>
+    
             </div>
-        
-          </div>
-
+    
+        </div>
+    
+    
+        <div class="container">
+    
+            <input type="radio" name="dot" id="on2">
+            <input type="radio" name="dot" id="twe">
+    
+            <div class="main-card">
+    
+                <div class="cards">
+                    <div class="card">
+    
+                        <div class="content" id="travelBlogsData">
+                        </div>
+    
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+    
     </div>
 
 
@@ -125,5 +149,6 @@
     
 </body>
 </html>
+
 
 <script src="./scripts/index.js"></script>
