@@ -21,6 +21,8 @@ let one = document.getElementById('one');
 let round = document.getElementById('round');
 let multi = document.getElementById('multi');
 let finalSearch = document.getElementById('finalSearch');
+let fromBox = document.getElementById('fromResults');
+let toBox = document.getElementById('toResults');
 
 let trip = "one", specialCitizen = 0, flightClass = 1, totalCount = 1;
 
@@ -37,6 +39,20 @@ function query(from, to, depart, arrive, travellers, adults, children, infants, 
     this.specialCitizen = special;
     this.trip = trip;
 }
+from.addEventListener('click', () => {
+    if (fromBox.style.display === "none") {
+        fromBox.style.display = "block";
+    } else {
+        fromBox.style.display = "none";
+    }
+})
+to.addEventListener('click', () => {
+    if (toBox.style.display === "none") {
+        toBox.style.display = "block";
+    } else {
+        toBox.style.display = "none";
+    }
+})
 
 finalSearch.addEventListener('click', () => {
 
@@ -197,4 +213,19 @@ function swapFromTo() {
 
 swap.addEventListener('click', swapFromTo);
 
+async function searchAutoComplete(feed) {
+    let a = await fetch(`https://airportix.p.rapidapi.com/autocomplete/airport/`, {
+        "method": "POST",
+        "headers": {
+            "content-type": "application/x-www-form-urlencoded",
+            "x-rapidapi-host": "airportix.p.rapidapi.com",
+            "x-rapidapi-key": "e41ac5f444mshb544d722349d34cp12a1c9jsn14405c0bb667"
+        },
+        "body": {
+            "query": feed
+        }
+    });
+    let b = await a.json();
 
+    
+}
