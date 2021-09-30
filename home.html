@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+    <link rel="stylesheet" href="./footer/footer.css">
+    <link rel="stylesheet" href="./signup/signup.css">
+    <!-- <link rel="stylesheet" href="flight.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4008f4a305.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <button id="popUp">signup</button>
+
+    <!-- ............signUp div................ -->
+    <div class="placingSignUp">
+
+    </div>
+    <!-- ...............password div.................. -->
+    <div class="placingSignUpPass">
+
+    </div>
+
+
+
+    <!-- .............login or signup ended.................. -->
+    <div class="grey_bg">
+        <div class="innerWrap">
+            <div class="excdeals">Top Flight Routes</div>
+            <div>
+                <div class="fl_container">
+                    <div class="lft_block">
+                        <div class="tab-content-lft current">
+
+                        </div>
+                    </div>
+                    <div class="rit_block">
+                        <div class="tab-content-rit current">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ..............pre footer part................... -->
+    <div class="mid_pnl">
+        <div class="innerWrap">
+            <h4>Search Flights, Hotels, Bus and Holiday Packages
+            </h4>
+            <div class="para">
+                EaseMyTrip.com is one of the topmost travel
+                companies of India and is a trusted name in the
+                Indian travel industry. It is also known for
+                providing the best travel deals to travelers. Being
+                a strong network of 52,752 travel agents (as of
+                September 30, 2019) and having more than 9.27
+                million direct customers, EaseMyTrip can satisfy all
+                your travel needs. Here, You can book flight
+                tickets, hotels, bus tickets, and holiday packages
+                at a cost-effective price. So, why go anywhere else?
+                Visit us for a memorable travel experience in your
+                budget.</div>
+        </div>
+    </div>
+
+    <div class="bottom_bdr_h">
+        <div class="dark_clr_h">Why Book With Us?</div>
+        <div class="light_clr_h">
+            <div class="col_bot_1">
+                <div class="img_col"><span class="eb_hp_i"></span>
+                </div>
+                <div class="rit_col">
+                    <h6>Easy Booking</h6>
+                    <p>We offer easy and convenient flight bookings
+                        with attractive offers.</p>
+                </div>
+            </div>
+            <div class="col_bot_1">
+                <div class="img_col"><span class="lp_hp_i"></span>
+                </div>
+                <div class="rit_col">
+                    <h6>Lowest Price</h6>
+                    <p>We ensure low rates on hotel reservation,
+                        holiday packages and on flight tickets.</p>
+                </div>
+            </div>
+            <div class="col_bot_1">
+                <div class="img_col"><span class="ed_hp_i"></span>
+                </div>
+                <div class="rit_col">
+                    <h6>Exciting Deals</h6>
+                    <p>Enjoy exciting deals on flights, hotels,
+                        buses, car rental and tour packages.</p>
+                </div>
+            </div>
+            <div class="col_bot_1">
+                <div class="img_col"><span class="sp_hp_i"></span>
+                </div>
+                <div class="rit_col">
+                    <h6>24/7 Support</h6>
+                    <p>Get assistance 24/7 on any kind of travel
+                        related query. We are happy to assist you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer part -->
+    <div id="placeFooter"></div>
+
+</body>
+
+<script src="./home/home.js" type="module"></script>
+
+</html>
+
+<script type="module">
+    // import footer from "./footer.js";
+
+    // let footerPlace = document.querySelector('#placeFooter');
+    // footerPlace.innerHTML = footer()
+
+    // import flight from "./flightData.js";
+
+    // console.log(flight)
+    // let count = 0;
+    // flight.forEach(element => {
+    //     let container;
+    //     if (count % 2 == 0) {
+    //         container = document.querySelector(".tab-content-lft");
+    //     } else {
+    //         container = document.querySelector(".tab-content-rit");
+    //     }
+
+    //     let ul = document.createElement('ul')
+    //     let li1 = document.createElement('li')
+    //     li1.innerText = element;
+
+    //     let li2 = document.createElement('li')
+    //     let a = document.createElement('a')
+    //     a.innerText = "search flight"
+    //     a.setAttribute('class', 'srch_btn')
+    //     li2.appendChild(a)
+
+
+    //     ul.append(li1, li2)
+    //     container.appendChild(ul)
+
+    //     // console.log('container,element:', container, element)
+    //     count++;
+    // });
+
+    // import { signUpHtml, passwordHtml } from "./signup.js"
+    // document.querySelector(".placingSignUp").innerHTML = signUpHtml();
+    // document.querySelector(".placingSignUpPass").innerHTML = passwordHtml();
+
+
+    // document.querySelector('#popUp').addEventListener('click', () => {
+    //     document.querySelector('.bg-modal-signup').style.display = 'flex';
+    //     // document.querySelector('.bg-modal-password').style.display = 'flex';
+    // });
+
+    // document.querySelector('#close-sign-up-form').addEventListener('click', () => {
+    //     document.querySelector('.bg-modal-signup').style.display = 'none';
+    //     console.log('suraj')
+    // });
+
+    // document.querySelector('#close-pass-up-form').addEventListener('click', () => {
+    //     document.querySelector('.bg-modal-password').style.display = 'none';
+    //     console.log('suraj')
+    // });
+
+    // document.querySelector('#continue').addEventListener('click', () => {
+
+    //     document.querySelector('.bg-modal-signup').style.display = 'none';
+    //     document.querySelector('.bg-modal-password').style.display = 'flex';
+    //     console.log('verma:')
+    // });
+
+    // let suraj = document.querySelectorAll('.signupContinue')
+    // console.log('suraj:', suraj)
+
+</script>
