@@ -8,7 +8,7 @@ function signUpHtml() {
             </div>
             <div class="emailIdNumber">Email ID or Mobile Number</div>
             <div class="form">
-                <form action="">
+                <form action="" id="emailForm">
                     <input type="email" id="form-signIn-email" placeholder="enter email ID or mobile Number"
                         required>
                     <button type="submit" class="signupContinue" id="continue">Continue</button>
@@ -36,7 +36,7 @@ function passwordHtml() {
             <div class="emailIdNumber">Please enter your password.</div>
 
             <div class="form">
-                <form action="">
+                <form action="" id="passwordForm">
                     <input type="password" id="form-signIn-password" placeholder="**************" required>
                     <div class="text-right signUpPara"><span>Reset Password</span></div>
                     <button type="submit" class="signupContinue login">Login</button>
