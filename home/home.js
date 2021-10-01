@@ -64,8 +64,39 @@ document.querySelector('#form-signIn-email').addEventListener('input', () => {
 });
 
 //when user will click on the contiue  the password window will popup
-document.querySelector('form').addEventListener('submit', (e) => {
+let emailVal = '';
+document.querySelector('#emailForm').addEventListener('submit', (e) => {
 	e.preventDefault();
+
+	emailVal = document.querySelector('#form-signIn-email').value;
+	let registerDetail = {
+		email: emailVal,
+		password: ''
+	};
+
+	let detailOfSignIn = {
+		email: emailVal,
+		password: '',
+		isCorrect: false
+	};
+	localStorage.setItem('signUp', JSON.stringify([ detailOfSignIn ]));
+
+	if (localStorage.getItem('registerCandidateData') === null) {
+		localStorage.setItem('registerCandidateData', JSON.stringify([]));
+	}
+
+	let registerObject = JSON.parse(localStorage.getItem('registerCandidateData'));
+	let isEmailRegister = false;
+	registerObject.forEach((element) => {
+		if (element.email === emailVal) {
+			isEmailRegister = true;
+		}
+	});
+	if (!isEmailRegister) {
+		registerObject.push(registerDetail);
+	}
+
+	localStorage.setItem('registerCandidateData', JSON.stringify(registerObject));
 
 	document.querySelector('.bg-modal-signup').style.display = 'none';
 	document.querySelector('.bg-modal-password').style.display = 'flex';
@@ -85,7 +116,39 @@ document.querySelector('#form-signIn-password').addEventListener('input', () => 
 	} else {
 		login.style.backgroundColor = '#EF6614';
 	}
-	login.addEventListener('submit', (e) => {
-		window.location.href = './home.html';
-	});
 });
+
+document.querySelector('#passwordForm').addEventListener('submit', (e) => {
+	e.preventDefault();
+	let passwordVal = document.querySelector('#form-signIn-password').value;
+	let registerObject = JSON.parse(localStorage.getItem('registerCandidateData'));
+	let signUp = JSON.parse(localStorage.getItem('signUp'));
+	let count = 0;
+
+	console.log('	signUp.password:', signUp[0].password);
+	if (signUp[0].password === '') {
+		registerObject.forEach((element) => {
+			if (element.email === signUp[0].email) {
+				element.password = passwordVal;
+				signUp[0].password = passwordVal;
+				signUp[0].isCorrect = true;
+			}
+			console.log('element:', element);
+			count++;
+		});
+		localStorage.setItem('registerCandidateData', JSON.stringify(registerObject));
+		if (signUp[0].isCorrect === true) {
+			localStorage.setItem('signUp', JSON.stringify(signUp));
+			window.location.href = './home.html';
+		}
+	}
+});
+
+// this will show the email id of the login user when he will sucessfully login
+let signUpAppend = JSON.parse(localStorage.getItem('signUp'));
+if (signUpAppend[0].isCorrect === true) {
+	let div = document.querySelector('#signupLogin');
+	div.innerHTML = `hi, ${signUpAppend[0].email}`;
+	div.style.padding = '5px';
+	div.style.fontSize = '15px';
+}
