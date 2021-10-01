@@ -70,6 +70,10 @@ finalSearch.addEventListener('click', () => {
         alert('Please enter valid departure date');
         return;
     }
+    if (trip === "round" && arrive.value === "") {
+        alert('Please enter valid arrival date');
+        return;
+    }
     localStorage.setItem('searchQuery', JSON.stringify(new query(from.value, to.value, depart.value, arrive.value, totalCount, Number(adultCount.innerText), Number(childrenCount.innerText), Number(infantCount.innerText), travelClass.innerText, specialCitizen, trip)));
     window.location.href = "flightSearch.htm";
 

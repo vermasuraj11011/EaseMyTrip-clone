@@ -222,7 +222,6 @@
     margin-top: 15px;
     font-size: 16px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 #ttype {
@@ -253,7 +252,7 @@
     background-color: #6DD1F4;
     align-items: center;
     border-radius: 4px;
-    margin-right: 18px;
+    margin-left: 256px;
     cursor: pointer;
 }
 #fromBox{
