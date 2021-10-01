@@ -149,3 +149,25 @@
 #helpline div{
     margin-top: -0.7em;
 }
+
+@media only  screen and (max-width:1360px){
+  #helpline{
+    margin-left: 23%;
+    margin-top: 7px;
+  }
+
+  #signupLogin{
+    margin-left: 23%;
+  }
+}
+
+@media only  screen and (max-width:1230px){
+  #helpline{
+    margin-left: 13%;
+    margin-top: 7px;
+  }
+
+  #signupLogin{
+    margin-left: 13%;
+  }
+}
