@@ -259,6 +259,292 @@ svg{
     margin-top: -20px;
 }
 
+
+#priceSummary{
+    height: 250px;
+    width: 25%;
+    border: 1px solid red;
+    margin-left: 72%;
+    margin-top: -19.5%;
+    border:  1px solid rgb(221, 217, 217);
+    box-shadow: rgba(121, 121, 121, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 5px;
+}
+
+#priceSummary div > img{
+    margin-top: 4px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 4px;
+    margin-left: 3px;
+}
+
+#priceSmrHead p{
+  margin-left: 16%;
+  margin-top: -14%;
+}
+
+.fa-male{
+    float: left;
+    font-size: 15px;
+    margin-left: 60%;
+    margin-top: -54%;
+}
+
+#adult{
+     margin-left: 64%;
+     margin-top: -7.5%;
+     font-weight: 400;
+     font-size: 14px;
+}
+
+.fa-child{
+    float: left;
+    font-size: 15px;
+    margin-left: 69%;
+    margin-top: -54%;
+}
+
+#child{
+     margin-left: 73%;
+     margin-top: -5.3%;
+     font-weight: 400;
+     font-size: 14px;
+}
+
+.infantLogo{
+    float: left;
+    font-size: 18px;
+    margin-left: 77%;
+    margin-top: -54%;
+}
+#infant{
+    font-size: 14px;
+    margin-left: 83%;
+    margin-top: -4.8%;
+}
+
+.pricesmrLine1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-bottom: 4%;
+}
+
+.pricesmrLine1  {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#price{
+    margin-right:2% ;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.grandTotal{
+    font-size: 22px;
+    color: #d63b05;
+    line-height: 35px;
+    font-weight: 700;
+}
+
+#medicalRefund , #goodTOKnow{
+    border:  1px solid rgb(221, 217, 217);
+    box-shadow: rgba(121, 121, 121, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 5px;
+    width: 65%;
+    height: 145px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.medicalRefundHead{
+    display: flex;
+    background-color: rgb(246,246,246);
+}
+
+.medicalRefundHead img{
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+.medicalRefundHead > img + p{
+    font-size: 15px;
+    color: #2196f3;
+    line-height: 21px;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.medicalRefundHead > img + a{
+    color: #2196f3;
+    margin-left: 57%;
+    font-size: 12px;
+    margin-top: 1%;
+}
+
+ 
+.WantRefundRadio{
+    display: flex;
+}
+
+.WantRefundRadio p{
+    margin-top: 2.3%;
+    margin-left: 1%;
+    font-size: 12px;
+}
+
+.WantRefundRadio input {
+   width: 20px;
+   height: 20px;
+   margin-left: 2%;
+   margin-top: 2%;
+}
+
+#couponCodeDiv{
+    height: 274px;
+    width: 25%;
+    margin-left: 72%;
+    margin-top: -12.5%;
+    border:  1px solid rgb(221, 217, 217);
+    box-shadow: rgba(121, 121, 121, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 5px;   
+    
+}
+
+#goodTOKnow{
+    display: grid;
+    margin-top: -3%;
+    margin-bottom: 2%;
+}
+
+.goodTOKnowHead{
+    background-color: rgb(220,251,208);
+}
+
+
+.goodTOKnowHead img{
+    float: left;
+    margin-right: 1.4%;
+    margin-left: 1%;
+    margin-top: 0.5%;
+
+}
+.goodTOKnowHead >p{
+    font-size: 15px;
+    float: left;
+    margin-top: 1.7%;
+}
+
+.goodtoknwheadInfo{
+    font-size: 11px !important;
+}
+
+.goodtoKnowHeaddiv{
+    display: grid;
+}
+.goodtoknowList{
+    margin-left: 2.5%;
+    font-size: 12px;
+    margin-top: 1.2%;
+    font-weight: 400;
+}
+
+.cpnCodeHead{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: rgb(33,150,243);
+    padding: 5px;
+    margin-left: -1px;
+    padding-left: 10px;
+    color: white ;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+ .no-outline{
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: rgb(190, 190, 194);
+    line-height: 35px;
+    font-size: 18px;
+    margin-left: 2.4%;
+    padding-left: 5px;
+ }
+
+ #couponCodeDiv hr{
+     margin-top: 2.7%;
+     border: 0.5px solid gainsboro;
+ }
+
+ #applyCoupon{
+    background-color: rgb(33,150,243);
+    border: 1px solid  rgb(33,150,243);
+    border-radius: 3px;
+    color: white;
+    padding: 5px;
+    width: 30%;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 2%;
+    margin-top: 2%;
+ }
+
+ #applyCoupon:hover{
+     background-color: rgb(59, 114, 165);
+     border: 1px solid rgb(59, 114, 165);
+ }
+
+ #coupounS{
+  display: grid;
+  overflow-y: scroll;
+  height:170px ;
+ }
+ #coupounS >div{
+     display: flex;
+     height: 60px;
+     border-bottom: 1px solid rgb(150, 146, 146);
+ }
+
+  #coupounS  h4{
+      margin-top: 2%;
+  }
+
+  .makeThemHorizonatal{
+      display: grid;
+  }
+  .makeThemHorizonatal p{
+    font-size: 11px;
+    line-height: 16px;
+    color: #4a4a4a;
+  }
+
+ #couponRadio{
+     margin-left: 3%;
+     margin-top: 3%;
+     margin-bottom: 2%;
+     margin-right:2% ;
+     width: 20px;
+     height: 20px;
+ }
+
+ #continueButton{
+    text-decoration: none;
+    text-align: center;
+    padding: 9px;
+    float: left;
+    font-size: 19px;
+    border-radius: 5px;
+    border: 1px solid #EF6614;
+    width: 24%;
+    background-color:  #EF6614;
+    color: white;
+    margin-left: 72.3%;
+    margin-top: -6%;
+ }
+
 @media only screen and (max-width:1355px){
     .fa-plane{
         margin-left: -31.3%;
@@ -273,6 +559,33 @@ svg{
     #destinTerminal{
         margin-left: 82.9%;
     }
+    #priceSummary{
+        width: 27%;
+        margin-top: -22%;
+    }
+    .fa-male{
+        margin-top: -56%;
+    }
+    #adult{
+        margin-top: -9.4%;
+   }
+    
+    .fa-child{
+    margin-top: -56%;
+   }
+   .infantLogo{
+    margin-top: -56%;
+   }
+   #goodTOKnow{
+       margin-top: -5%;
+   }
+   #couponCodeDiv{
+       width: 27%;
+   }
+   #applyCoupon{
+       width: 25%;
+   }
+
 }
 
 
@@ -294,4 +607,37 @@ svg{
     #destinTerminal{
         margin-left: 86.5%;
     }
+   #priceSummary{
+    margin-top: -24.5%;
+   }
+   #priceSmrHead p{
+       margin-top: -15.4%;
+   }
+   .fa-male{
+    margin-top: -62%;
+    margin-left: 62%;
+   }
+    #adult{
+        margin-left: 65.9%;
+        margin-top: -10.3%;
+   }
+   .fa-child{
+    margin-top: -61.8%;
+   }
+   .infantLogo{
+    margin-top: -61.8%;
+   }
+   #infant{
+    margin-top: -5.4%;
+   }
+    #goodTOKnow{
+       margin-top: -6%;
+   }
+   #couponCodeDiv{
+     margin-top: -14%;
+   }
+   
+   #applyCoupon{
+       width: 20%;
+   }
 }
