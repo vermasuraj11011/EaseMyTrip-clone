@@ -494,3 +494,95 @@ height: 15%;
 #inputCardHolderName{
     margin-top: 3%;
 } */
+
+/* Price Summery */
+
+
+#priceSummary{
+    height: 250px;
+    width: 100%;
+    border: 1px solid red;
+    border:  1px solid rgb(221, 217, 217);
+    box-shadow: rgba(121, 121, 121, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+
+#priceSummary div > img{
+    margin-top: 4px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 4px;
+    margin-left: 3px;
+}
+
+#priceSmrHead p{
+  margin-left: 16%;
+  margin-top: -14%;
+}
+
+.fa-male{
+    float: left;
+    font-size: 15px;
+    margin-left: 60%;
+    margin-top: -54%;
+}
+
+#adult{
+     margin-left: 64%;
+     margin-top: -7.5%;
+     font-weight: 400;
+     font-size: 14px;
+}
+
+.fa-child{
+    float: left;
+    font-size: 15px;
+    margin-left: 69%;
+    margin-top: -54%;
+}
+
+#child{
+     margin-left: 73%;
+     margin-top: -5.3%;
+     font-weight: 400;
+     font-size: 14px;
+}
+
+.infantLogo{
+    float: left;
+    font-size: 18px;
+    margin-left: 77%;
+    margin-top: -54%;
+}
+#infant{
+    font-size: 14px;
+    margin-left: 83%;
+    margin-top: -4.8%;
+}
+
+.pricesmrLine1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-bottom: 4%;
+}
+
+.pricesmrLine1  {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#price{
+    margin-right:2% ;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.grandTotal{
+    font-size: 22px;
+    color: #d63b05;
+    line-height: 35px;
+    font-weight: 700;
+}
