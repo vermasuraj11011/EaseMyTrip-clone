@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
 
     <link rel="stylesheet" href="styles/flightSearch.css">
     <link rel="stylesheet" href=".\styles\header.css">
+    <link rel="stylesheet" href="./footer/footer.css">
 
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
 
@@ -21,6 +23,7 @@
     <script src="https://kit.fontawesome.com/4008f4a305.js" crossorigin="anonymous"></script>
     <title>FlightList Lowest Airfare, Flight Tickets, Cheap Air Tickets - EaseMyTrip.com</title>
 </head>
+
 <body>
 
     <div id="navbarPlace">
@@ -157,7 +160,7 @@
                     </div>
                     <div class="flexMe">
                         <input type="radio" name="travl" id="train" class="trvl" value="5">
-                        <label class="trvl_type" for="train" >Train Waitlisted</label>
+                        <label class="trvl_type" for="train">Train Waitlisted</label>
                     </div>
                 </div>
             </div>
@@ -192,7 +195,7 @@
                             <label for="" id="toPrice">Rs. 10,000</label>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div id="leftDeparture" class="left left_entry">
                     <div class="dropdown flexLeft">
@@ -209,7 +212,7 @@
                             <label for="" id="toHourDepart">24 Hr</label>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div id="leftArrival" class="left left_entry">
                     <div class="dropdown flexLeft">
@@ -226,9 +229,9 @@
                             <label for="" id="toHourArrive">24 Hr</label>
                         </div>
                     </div>
-                    
+
                 </div>
-                
+
                 <div id="leftStop" class="left left_entry">
                     <div class="flexSpace">
                         <div class="dropdown flexLeft">
@@ -255,7 +258,7 @@
                             <label for="twostop">2+ Stops</label>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div id="leftAirlines" class="left left_entry">
                     <div class="flexSpace">
@@ -335,9 +338,9 @@
                         <div>
                             <label for="" id="moreair"> Show less - </label>
                         </div>
-                        
+
                     </div>
-                    
+
                 </div>
             </div>
             <div id="right">
@@ -372,7 +375,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bookBox">
+                <div class="bookBox" id="flightBookBox">
                     <div class="bookMain flexSpace">
                         <div class="airlineInfo flexCenter">
                             <img src="icons/spicejet.png" class="airlogo" alt="">
@@ -464,12 +467,16 @@
             </div>
         </div>
     </div>
+
+    <!-- footer part -->
+    <div id="placeFooter"></div>
 </body>
+
 </html>
 <script src="./scripts/flightSearch.js"></script>
 <script type="module" src="./home/home.js"></script>
-
-<script type="module"> 
+<script src="./scripts/placingFlightList.js"></script>
+<script type="module">
 
     import header from "./component/header.js";
 
