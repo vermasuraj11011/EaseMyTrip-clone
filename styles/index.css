@@ -1,0 +1,961 @@
+/* * {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+#search {
+	background-image: linear-gradient(90deg, #2f80ed, #56ccf2);
+	padding: 2vw;
+	color: white;
+}
+#search_head {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#search_head > img {
+	height: 20px;
+	width: 42px;
+	margin: 1vw;
+}
+#search_catagory {
+	display: flex;
+}
+.search_cat {
+	
+	color: #cad5f5;
+	font-size: 14px;
+	list-style-type: none;
+	float: left;
+	width: 100px;
+	border-radius: 20px;
+	padding: 5px;
+	padding-inline: 10px;
+	margin-left: 2px;
+	text-align: center;
+	font-weight: 600;
+	cursor: pointer;
+}
+.search_cat:hover {
+	background-color: white;
+	color: #1853a2;
+}
+#one {
+	background-color: white;
+	color: #1853a2;
+}
+#swap {
+	border-radius: 50%;
+	padding: 3px;
+	background-color: white;
+	border: 1px solid gainsboro;
+	height: 25px;
+	width: 25px;
+	cursor: pointer;
+	transform: translateX(21px);
+}
+#swap img:hover {
+	transform: rotateZ(360deg);
+}
+#swap img {
+	transition: all 0.8s ease;
+	width: 100%;
+	height: 100%;
+}
+#arriveDate {
+	color: gray;
+}
+.searchfield,
+.searchfield input {
+	display: flex;
+	background-color: white;
+	align-items: center;
+	justify-content: center;
+	color: black;
+	height: 60px;
+	font-size: 15px;
+	padding-inline: 7px;
+}
+#search_box {
+	margin-top: 5px;
+	width: fit-content;
+	overflow-y: visible;
+	border-radius: 5px;
+	box-shadow: 2px 4px 4px 0px rgba(110, 190, 110, 0.8);
+	height: 60px;
+}
+#frombox {
+	align-items: center;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+#from,
+#to {
+	width: 150px;
+}
+#arrive {
+	height: 60px;
+}
+.options {
+	background-color: white;
+	line-height: 22px;
+	color: black;
+	box-shadow: 1px 4px 8px 2px rgba(190, 190, 190, 0.8);
+	margin: 1px;
+	border-radius: 2px;
+	padding: 16px;
+	z-index: 999;
+	height: fit-content;
+	position: relative;
+}
+#travelClass {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-flow: column;
+	width: 150px;
+	overflow: visible;
+}
+#travellerOption {
+	position: relative;
+	z-index: 900;
+	height: fit-content;
+	overflow: hidden;
+	width: 220px;
+	display: none;
+}
+#travel {
+	width: 150px;
+	overflow: visible;
+}
+.pass {
+	display: flex;
+	flex-direction: column;
+}
+.flexpass {
+	display: flex;
+	justify-content: space-between;
+}
+.passCount > label {
+	margin-top: 5px;
+	padding-inline: 8px;
+}
+.passCount > button {
+	color: white;
+	background-color: #43a6f0;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	padding: 2px;
+	border: none;
+	margin-inline: 2px;
+	cursor: pointer;
+	font-weight: 550;
+}
+.passAge {
+	color: gray;
+	font-size: 12px;
+}
+#classOption {
+	width: 200px;
+	display: none;
+}
+.classDone {
+	background-color: #ef6614;
+	color: white;
+	padding: 5px;
+	float: right;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.searchfield input,
+#searchFlight button {
+	outline: none;
+	border: none;
+	height: 50px;
+	font-weight: 550;
+}
+.icon {
+	height: 20px;
+	width: 20px;
+	margin-right: 2px;
+}
+.flexIt {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.labl {
+	font-size: 16px;
+	font-weight: 550;
+}
+#searchFlight button {
+	height: 100%;
+	background-color: #ef6614;
+	display: flex;
+	align-items: center;
+	color: white;
+	font-weight: 600;
+	padding: 20px;
+	justify-content: space-between;
+	width: 100%;
+	border: none;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	cursor: pointer;
+}
+#searchFlight button:hover {
+	background-color: #da5200;
+}
+.droptravel {
+	display: flex;
+	justify-content: space-between;
+	width: 150px;
+	align-items: center;
+}
+.searchfield {
+	border: 1px solid gainsboro;
+}
+.point {
+	cursor: pointer;
+}
+#search_end {
+	margin-top: 15px;
+	font-size: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#ttype {
+	display: flex;
+	align-items: center;
+}
+.trvl_type {
+	margin-right: 30px;
+	padding-left: 10px;
+	cursor: pointer;
+}
+.flexMe {
+	display: flex;
+	align-items: center;
+}
+.trvl {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	content: url('../icons/uncheck.png');
+}
+.trvl:checked {
+	content: url('../icons/check.png');
+}
+#webcheck {
+	padding: 8px;
+	border: 1px solid white;
+	background-color: #6dd1f4;
+	align-items: center;
+	border-radius: 4px;
+	margin-right: 18px;
+	cursor: pointer;
+}
+#fromBox {
+	overflow: visible;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.airportAutocomplete {
+	width: 300px;
+	background-color: white;
+	color: black;
+	height: 250px;
+	overflow-y: auto;
+	position: relative;
+	border: 1px solid lightgray;
+	padding: 8px;
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+#fromBox,
+#toBox {
+	width: 190px;
+}
+#cities {
+	width: 30px;
+	height: 40px;
+}
+.topAuto {
+	text-align: right;
+	justify-content: right;
+}
+.topAuto > div {
+	width: fit-content;
+}
+.autoFeed {
+	padding-top: 3px;
+	display: flex;
+	border-left: 5px solid white;
+	border-bottom: 1px solid gray;
+	padding-left: 3px;
+	padding-bottom: 2px;
+	background-color: white;
+}
+.autoFeed:hover {
+	border-left: 5px solid #2f80ed;
+	background-color: gainsboro;
+}
+.autoImg {
+	margin-top: 8px;
+	width: 15px;
+	height: 15px;
+}
+.autoDetails {
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+}
+.autoAirport {
+	display: flex;
+	justify-content: space-between;
+}
+.autoAirport > p {
+	color: gray;
+	font-size: 12px;
+	margin-top: 8px;
+	text-overflow: ellipsis;
+}
+.autoAirportName {
+	width: 200px;
+	margin-right: 16px;
+}  */
+
+/* Prottay Start */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#search {
+    background-image: linear-gradient(90deg, #2F80ED, #56CCF2);
+    padding: 2vw;
+    color: white;
+}
+#search_head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#search_head > img {
+    height: 20px;
+    width: 42px;
+    margin: 1vw;
+}
+#search_catagory {
+    display: flex;
+}
+.search_cat {
+    /* clear: both; */
+    color: #CAD5F5;
+    font-size: 14px;
+    list-style-type: none;
+    float: left;
+    width: 100px;
+    border-radius: 20px;
+    padding: 5px;
+    padding-inline: 10px;
+    margin-left: 2px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+.search_cat:hover {
+    background-color: white;
+    color: #1853A2;
+}
+#one {
+    background-color: white;
+    color: #1853A2;
+}
+#swap {
+    border-radius: 50%;
+    padding: 3px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    transform: translateX(21px);
+}
+#swap img:hover {
+    transform: rotateZ(360deg);
+}
+#swap img {
+    transition: all 0.8s ease;
+    width: 100%;
+    height: 100%;
+}
+#arriveDate {
+    color: gray;
+}
+.searchfield, .searchfield input {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 60px;
+    font-size: 15px;
+    padding-inline: 7px;
+}
+#search_box {
+    margin-top: 5px;
+    width: fit-content;
+    overflow-y: visible;
+    border-radius: 5px;
+    box-shadow: 2px 4px 4px 0px rgba(110, 190, 110, 0.8);
+    height: 60px;
+}
+#frombox {
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#from, #to {
+    width: 150px;
+}
+#arrive {
+    height: 60px;
+}
+.options {
+    background-color: white;
+    line-height: 22px;
+    color: black;
+    box-shadow: 1px 4px 8px 2px rgba(190, 190, 190, 0.8);
+    margin: 1px;
+    border-radius: 2px;
+    padding: 16px;
+    z-index: 999;
+    height: fit-content;
+    position: relative;
+}
+#travelClass {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-start;
+    flex-flow:column;
+    width: 150px;
+    overflow: visible;
+}
+#travellerOption {
+    position: relative;
+    z-index: 900;
+    height: fit-content;
+    overflow: hidden;
+    width: 220px;
+    display: none;
+}
+#travel{
+    width: 150px;
+    overflow: visible;
+}
+.pass {
+    display: flex;
+    flex-direction: column;
+}
+.flexpass {
+    display: flex;
+    justify-content: space-between;
+}
+.passCount > label {
+    margin-top: 5px;
+    padding-inline: 8px;
+}
+.passCount > button {
+    color: white;
+    background-color: #43A6F0;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding: 2px;
+    border: none;
+    margin-inline: 2px;
+    cursor: pointer;
+    font-weight: 550;
+}
+.passAge {
+    color: gray;
+    font-size: 12px;
+}
+#classOption {
+    width: 200px;
+    display: none;
+}
+.classDone {
+    background-color: #EF6614;
+    color: white;
+    padding: 5px;
+    float: right;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.searchfield input, #searchFlight button {
+    outline: none;
+    border: none;
+    height: 50px;
+    font-weight: 550;
+}
+.icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 2px;
+}
+.flexIt {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.labl {
+    font-size: 16px;
+    font-weight: 550;
+}
+#searchFlight button {
+    height: 100%;
+    background-color: #EF6614;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    padding: 20px;
+    justify-content: space-between;
+    width: 100%;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+#searchFlight button:hover {
+    background-color: #DA5200;
+}
+.droptravel {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    align-items: center;
+}
+.searchfield {
+    border: 1px solid gainsboro;
+}
+.point {
+    cursor: pointer;
+}
+#search_end {
+    margin-top: 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+#ttype {
+    display: flex;
+    align-items: center;
+}
+.trvl_type {
+    margin-right: 30px;
+    padding-left: 10px; 
+    cursor: pointer;
+}
+.flexMe{
+    display: flex;
+    align-items: center;
+}
+.trvl {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    content: url('../icons/uncheck.png');
+}
+.trvl:checked {
+    content: url('../icons/check.png');
+}
+#webcheck {
+    padding: 8px;
+    border: 1px solid white;
+    background-color: #6DD1F4;
+    align-items: center;
+    border-radius: 4px;
+    margin-left: 256px;
+    cursor: pointer;
+    color: white;
+}
+#fromBox{
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.airportAutocomplete {
+    width: 300px;
+    background-color: white;
+    color: black;
+    height: 250px;
+    overflow-y: auto;
+    position: relative;
+    border: 1px solid lightgray ;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+#fromBox, #toBox {
+    width: 190px;
+}
+#cities {
+    width: 30px;
+    height: 40px;
+}
+.topAuto {
+    float: right;
+    margin-bottom: 5px;
+    margin-right: 8px;
+}
+.autoFeed {
+    clear: both;
+    padding-top: 3px;
+    display: flex;
+    border-left: 5px solid white;
+    border-bottom: 1px solid gray;
+    padding-left: 3px;
+    padding-bottom: 2px;
+    background-color: white;
+    cursor: pointer;
+}
+.autoFeed:hover {
+    border-left: 5px solid #2F80ED;
+    background-color: gainsboro;
+}
+.autoImg {
+    margin-top: 8px;
+    width: 15px;
+    height: 15px;
+}
+.autoDetails {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.autoAirport {
+    display: flex;
+    justify-content: space-between;
+}
+.autoAirport > p {
+    color: gray;
+    font-size: 12px;
+    margin-top: 8px;
+    text-overflow: ellipsis;
+}
+.autoAirportName {
+    width: 200px;
+    margin-right: 16px;
+}
+a {
+    text-decoration: none;
+}
+.innerWrap {
+	width: 73.5%;
+}
+
+/* Prottay End */
+
+/* ravi */
+
+* {
+	margin: 0%;
+	padding: 0%;
+	font-family: 'Open Sans', sans-serif, Tahoma, Arial;
+}
+/* Instruction Section */
+
+#InstructionMainDiv{
+    margin: auto;
+    text-align: center;
+    width: 71%;
+	font-size: 14px;
+}
+    
+
+#InstructionSubDiv {
+    display: flex;
+    grid-column-gap: 4%;
+}  
+
+#InstructionSubDiv div{
+    margin: auto;
+    padding: 1% 3.2%;
+    margin-top: 2%;
+    border-radius: 4px;
+}
+
+#InstructionSubDiv div:nth-child(1){
+background-color: #FFF3CD;
+border: 1px solid #f1dfab;
+}
+
+#InstructionSubDiv div:nth-child(2){
+    background-color: #D9EDF7;
+    border: 1px solid #bce8f1;
+}
+
+#InstructionMainDiv :last-child{
+    background-color: #D4EDDA;
+    border-color: #c3e6cb;
+    border-radius: 4px;
+}
+    
+#refundDiv{
+    border: solid black 0.5px;
+    margin: auto;
+    padding: 1%;
+    margin-top: 2%
+
+}
+
+
+/* Offer Section */
+
+#offerSection{
+    margin: auto;
+    width: 73%;
+    margin-top: 3%;
+}
+
+#offerSectionNav{
+    width: 98%;
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    margin: auto; 
+}
+
+
+#offerSectionNav h3{
+    font-size: 28px;
+}
+
+
+#offerSectionNavLinks ul{
+    display: flex;
+    list-style: none;
+    font-size: 16px;
+    height: 28px;
+    margin-top: 2.3%
+}
+
+#offerSectionNavLinks li{
+   margin-right:3%;
+   font-weight: 600;
+   color: black;
+}
+
+#offerSectionNavLinks a{
+    text-decoration: none;
+    line-height: 9px;
+}
+
+#offerSectionNavLinks a:hover{
+    color: #ef6614 ;
+    border-bottom: 3px solid #ef6614;
+}
+
+#offerSectionNavScrollButton{
+    display: grid;
+    grid-template-columns: 68% 30%;
+}
+
+#allOfferLink{
+    margin-top: 8%;
+}
+
+#offerSectionData{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-top: 1%;  
+}
+
+.offerDetail{
+    display: grid;
+    grid-template-columns: 28% 68%;
+    padding: 2%;
+}
+
+.offerDetail h4{
+    margin: 0%;
+    margin-bottom: 4%;
+    font-size: 14px;
+    margin-left: 15%;
+}
+
+.offerDetail p{
+    margin: 0%;
+    font-size: 12px;
+    margin-left: 15%;
+}
+
+.offerDetailDate p{
+    margin: 0%;
+    float: right;
+    color: #7D7A7A;
+    font-size: 11px;
+    margin-top: 3%;
+    padding: 0.7%;
+    
+}
+.offerDetailMain{
+    width: 33%;
+    padding: 0.2%;
+    justify-content: space-between;
+    margin: 0.5%;
+    box-shadow: 0 0 7px rgb(0 0 0 / 20%);
+}
+
+.slideButton{
+    box-shadow: 0 0 7px rgb(0 0 0 / 20%);
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    border-radius: 9px;
+    height: 73%;
+}
+.btnIcon{
+    padding: 5%;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+/* Travel Section */
+
+#travelBlogSection{
+ width: 73%;
+ margin: auto;
+}
+
+#travelBlogSectionNav{
+    width: 97%;
+    display: grid;
+    margin: auto; 
+    grid-template-columns: 80% 20%;
+}
+
+#travelBlogSectionNav h3{
+    font-size: 28px;
+}
+
+#travelBlogScrollButton {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 65% 32%;
+}
+
+#allBlogLink{
+    margin-top: 8%;
+}
+
+#travelBlogsData{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-top: 1%;
+}
+
+#travelBlogsData div{
+ padding: 0%;
+ border-radius: 5px;
+}
+
+#travelBlogsData p{
+    padding: 2%;
+}
+
+
+#travelBlogsData  img{
+   width: 100%;
+}
+
+.travelBlogSlideButton{
+    height: 82%;
+}
+
+
+.container{
+    max-width: 1130px;
+    width: 100%;
+    overflow: hidden;
+    padding: 4px 0px;
+    margin: auto;
+  }
+
+  .container .main-card{
+    display: flex;
+    justify-content: space-evenly;
+    width: 199%;
+    transition: 2s;
+  }
+  #two:checked ~ .main-card{
+    margin-left: -100%;
+  }
+
+  #three:checked ~ .main-card{
+    margin-left: -100%;
+  }
+
+
+  input[type="radio"]{
+    display: none;
+  }
+
+
+  /* Payment Page */
+
+.guestUser {
+    min-height: 80px;
+    padding: 15px 27px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 4px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 20%);
+	width: 73%;
+	margin: auto;
+}
+.guestUser img{
+margin-right: 8%;
+}
+
+.guestUser, .leftsection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.mar20 {
+    margin-top: 20px;
+}
+
+.loginLink {
+    font-size: 14px;
+    background: #2196f3;
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+

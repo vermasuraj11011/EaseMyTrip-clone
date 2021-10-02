@@ -1,16 +1,757 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <title>home</title>
+    <link rel="stylesheet" href="./footer/footer.css">
+    <link rel="stylesheet" href="./signup/signup.css">
+    <link rel="stylesheet" href=".\styles\header.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles/index.css">
 
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-    <title>Bood Flights, Hotels, Bus Tickets & Holidays - EaseMyTrip.com</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4008f4a305.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
+    <!-- Navbar code -->
+
+    <div class="navbar">
+        <div> <a id="websitelogo" href=""> <img href=""
+                    src="https://searchlogovector.com/wp-content/uploads/2019/04/easemytrip-com-logo-vector.png" alt="">
+            </a> </div>
+        <a href="#home">FLIGHTS</a>
+        <p class="horizontal-Line"></p>
+        <a href="#news"> HOTELS </a>
+        <p class="horizontal-Line"></p>
+        <a href="#news"> TRAINS </a>
+        <p class="horizontal-Line"></p>
+        <a href="#news"> HOTELS </a>
+        <p class="horizontal-Line"></p>
+        <a href="#news"> BUS </a>
+        <p class="horizontal-Line"></p>
+        <a href="#news"> HOLIDAYS </a>
+        <p class="horizontal-Line"></p>
+        <a href="#news"> CABS </a>
+        <p class="horizontal-Line"></p>
+        <a href="#news"> ACTIVITIES </a>
+        <p class="horizontal-Line"></p>
+        <a href="#news"> GIFT CARD </a>
+        <p class="horizontal-Line"></p>
+        <a href="#news"> CHARTERS </a>
+        <p class="horizontal-Line"></p>
+        <div class="dropdown">
+            <button class="dropbtn">MORE
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">OFFERS</a>
+                <a href="#">CORPORATE TRAVEL</a>
+                <a href="#">AGENT LOGIN </a>
+            </div>
+        </div>
+
+        <div id="helpline" class="dropdown">
+            <button class="dropbtn"> 24x7 Helpline
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Tel : 011 - 43131313, 43030303</a>
+                <a href="#">Care@easemytrip.com</a>
+            </div>
+        </div>
+
+
+        <div id="signupLogin" class="dropdown"> 
+            <button class="dropbtn">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                My Account
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <span id="accountCircle" class="material-icons"> account_circle </span>
+                <div id="loginOrSignupbtn">
+                    <p> <a id="popUp">LOGIN OR SIGNUP</a>
+                    <p></p>
+                </div>
+                <a href="#"> <i class="fa fa-caret-right"></i> My Booking </a>
+                <a href="#"> <i class="fa fa-caret-right"></i> Print/Cancel Booking</a>
+            </div>
+        </div>
+
+    </div>
+    <!-- ............signUp div................ -->
+    <div class="placingSignUp">
+
+    </div>
+    <!-- ...............password div.................. -->
+    <div class="placingSignUpPass">
+
+    </div>
+
+
+    <!-- .............login or signup ended.................. -->
+
+    <!-- Prottay -->
+    <div id="search">
+        <div id="search_head">
+            <img src="icons/flight.jpg" alt="">
+            <h1>Search Lowest Airfare</h1>
+        </div>
+        <div id="search_catagory">
+            <ul>
+                <li id="one" class="search_cat">One-Way</li>
+                <li id="round" class="search_cat">Round-Way</li>
+                <li id="multi" class="search_cat">Multi-City</li>
+            </ul>
+        </div>
+        <div id="search_box" class="flexIt">
+            <div id="fromBox" class="">
+                <div id="frombox" class="searchfield flexIt">
+                    <input type="text" name="" id="from" placeholder="From">
+                    <div id="swap">
+                        <img src="icons/change1.PNG" alt="" class="" id="">
+                    </div>
+                </div>
+                <div id="fromResults" class="airportAutocomplete">
+                    <div class="topAuto">
+                        <div class="flexMe">
+                            <img src="icons/cities.PNG" id="cities" alt="">
+                            <h4>Top Cities</h4>
+                        </div>
+                    </div>
+                    <div class="autoFeed">
+                        <div class="autoPlane">
+                            <img src="icons/plane.png" class="autoImg" alt="">
+                        </div>
+                        <div class="autoDetails">
+                            <h3 class="autoCity">Delhi (DEL)</h3>
+                            <div class="autoAirport">
+                                <p class="autoAirportName">Indira Gandhi International Airport</p>
+                                <p class="autoCountry">India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="autoFeed">
+                        <div class="autoPlane">
+                            <img src="icons/plane.png" class="autoImg" alt="">
+                        </div>
+                        <div class="autoDetails">
+                            <h3 class="autoCity">Bangalore (BLR)</h3>
+                            <div class="autoAirport">
+                                <p class="autoAirportName">Bengaluru International Airport</p>
+                                <p class="autoCountry">India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="autoFeed">
+                        <div class="autoPlane">
+                            <img src="icons/plane.png" class="autoImg" alt="">
+                        </div>
+                        <div class="autoDetails">
+                            <h3 class="autoCity">Mumbai (BOM)</h3>
+                            <div class="autoAirport">
+                                <p class="autoAirportName">Chhatrapati Shivaji International Airport</p>
+                                <p class="autoCountry">India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="autoFeed">
+                        <div class="autoPlane">
+                            <img src="icons/plane.png" class="autoImg" alt="">
+                        </div>
+                        <div class="autoDetails">
+                            <h3 class="autoCity">Kolkata (CCU)</h3>
+                            <div class="autoAirport">
+                                <p class="autoAirportName">Netaji Subhash Chandra Bose International Airport</p>
+                                <p class="autoCountry">India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="autoFeed">
+                        <div class="autoPlane">
+                            <img src="icons/plane.png" class="autoImg" alt="">
+                        </div>
+                        <div class="autoDetails">
+                            <h3 class="autoCity">Goa (GOI)</h3>
+                            <div class="autoAirport">
+                                <p class="autoAirportName">Dabolim Goa International Airport</p>
+                                <p class="autoCountry">India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="autoFeed">
+                        <div class="autoPlane">
+                            <img src="icons/plane.png" class="autoImg" alt="">
+                        </div>
+                        <div class="autoDetails">
+                            <h3 class="autoCity">Hyderabad (HYD)</h3>
+                            <div class="autoAirport">
+                                <p class="autoAirportName">Rajiv Gandhi International Airport</p>
+                                <p class="autoCountry">India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="autoFeed">
+                        <div class="autoPlane">
+                            <img src="icons/plane.png" class="autoImg" alt="">
+                        </div>
+                        <div class="autoDetails">
+                            <h3 class="autoCity">Chennai (MMA)</h3>
+                            <div class="autoAirport">
+                                <p class="autoAirportName">Madras, Chennai International Airport</p>
+                                <p class="autoCountry">India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="autoFeed">
+                        <div class="autoPlane">
+                            <img src="icons/plane.png" class="autoImg" alt="">
+                        </div>
+                        <div class="autoDetails">
+                            <h3 class="autoCity">Singapore (SIN)</h3>
+                            <div class="autoAirport">
+                                <p class="autoAirportName">Changi Airport</p>
+                                <p class="autoCountry">Singapore</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="autoFeed">
+                        <div class="autoPlane">
+                            <img src="icons/plane.png" class="autoImg" alt="">
+                        </div>
+                        <div class="autoDetails">
+                            <h3 class="autoCity">Dubai (DXB)</h3>
+                            <div class="autoAirport">
+                                <p class="autoAirportName">Dubai International Airport</p>
+                                <p class="autoCountry">United Arab Emirates</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="autoFeed">
+                        <div class="autoPlane">
+                            <img src="icons/plane.png" class="autoImg" alt="">
+                        </div>
+                        <div class="autoDetails">
+                            <h3 class="autoCity">Bangkok (BKK)</h3>
+                            <div class="autoAirport">
+                                <p class="autoAirportName">Suvarnabhumi Airport</p>
+                                <p class="autoCountry">Thailand</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="autoFeed">
+                        <div class="autoPlane">
+                            <img src="icons/plane.png" class="autoImg" alt="">
+                        </div>
+                        <div class="autoDetails">
+                            <h3 class="autoCity">Kathmandu (KTM)</h3>
+                            <div class="autoAirport">
+                                <p class="autoAirportName">Tribhuvan International Airport</p>
+                                <p class="autoCountry">Nepal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="toBox" class="">
+                <div id="tobox" class="searchfield">
+                    <input type="text" name="" id="to" placeholder="To">
+                </div>
+                <div id="toResults" class="airportAutocomplete">
+                    <div class="topAuto">
+                        <div class="flexMe">
+                            <img src="icons/cities.PNG" id="cities" alt="">
+                            <h4>Top Cities</h4>
+                        </div>
+                    </div>
+                    <div class="autoFeed">
+                        <div class="autoPlane">
+                            <img src="icons/plane.png" class="autoImg" alt="">
+                        </div>
+                        <div class="autoDetails">
+                            <h3 class="autoCity">Delhi (DEL)</h3>
+                            <div class="autoAirport">
+                                <p class="autoAirportName">Indira Gandhi International Airport</p>
+                                <p class="autoCountry">India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="autoFeed">
+                        <div class="autoPlane">
+                            <img src="icons/plane.png" class="autoImg" alt="">
+                        </div>
+                        <div class="autoDetails">
+                            <h3 class="autoCity">Bangalore (BLR)</h3>
+                            <div class="autoAirport">
+                                <p class="autoAirportName">Bengaluru International Airport</p>
+                                <p class="autoCountry">India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="autoFeed">
+                        <div class="autoPlane">
+                            <img src="icons/plane.png" class="autoImg" alt="">
+                        </div>
+                        <div class="autoDetails">
+                            <h3 class="autoCity">Mumbai (BOM)</h3>
+                            <div class="autoAirport">
+                                <p class="autoAirportName">Chhatrapati Shivaji International Airport</p>
+                                <p class="autoCountry">India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="autoFeed">
+                        <div class="autoPlane">
+                            <img src="icons/plane.png" class="autoImg" alt="">
+                        </div>
+                        <div class="autoDetails">
+                            <h3 class="autoCity">Kolkata (CCU)</h3>
+                            <div class="autoAirport">
+                                <p class="autoAirportName">Netaji Subhash Chandra Bose International Airport</p>
+                                <p class="autoCountry">India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="autoFeed">
+                        <div class="autoPlane">
+                            <img src="icons/plane.png" class="autoImg" alt="">
+                        </div>
+                        <div class="autoDetails">
+                            <h3 class="autoCity">Goa (GOI)</h3>
+                            <div class="autoAirport">
+                                <p class="autoAirportName">Dabolim Goa International Airport</p>
+                                <p class="autoCountry">India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="autoFeed">
+                        <div class="autoPlane">
+                            <img src="icons/plane.png" class="autoImg" alt="">
+                        </div>
+                        <div class="autoDetails">
+                            <h3 class="autoCity">Hyderabad (HYD)</h3>
+                            <div class="autoAirport">
+                                <p class="autoAirportName">Rajiv Gandhi International Airport</p>
+                                <p class="autoCountry">India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="autoFeed">
+                        <div class="autoPlane">
+                            <img src="icons/plane.png" class="autoImg" alt="">
+                        </div>
+                        <div class="autoDetails">
+                            <h3 class="autoCity">Chennai (MMA)</h3>
+                            <div class="autoAirport">
+                                <p class="autoAirportName">Madras, Chennai International Airport</p>
+                                <p class="autoCountry">India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="autoFeed">
+                        <div class="autoPlane">
+                            <img src="icons/plane.png" class="autoImg" alt="">
+                        </div>
+                        <div class="autoDetails">
+                            <h3 class="autoCity">Singapore (SIN)</h3>
+                            <div class="autoAirport">
+                                <p class="autoAirportName">Changi Airport</p>
+                                <p class="autoCountry">Singapore</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="autoFeed">
+                        <div class="autoPlane">
+                            <img src="icons/plane.png" class="autoImg" alt="">
+                        </div>
+                        <div class="autoDetails">
+                            <h3 class="autoCity">Dubai (DXB)</h3>
+                            <div class="autoAirport">
+                                <p class="autoAirportName">Dubai International Airport</p>
+                                <p class="autoCountry">United Arab Emirates</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="autoFeed">
+                        <div class="autoPlane">
+                            <img src="icons/plane.png" class="autoImg" alt="">
+                        </div>
+                        <div class="autoDetails">
+                            <h3 class="autoCity">Bangkok (BKK)</h3>
+                            <div class="autoAirport">
+                                <p class="autoAirportName">Suvarnabhumi Airport</p>
+                                <p class="autoCountry">Thailand</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="autoFeed">
+                        <div class="autoPlane">
+                            <img src="icons/plane.png" class="autoImg" alt="">
+                        </div>
+                        <div class="autoDetails">
+                            <h3 class="autoCity">Kathmandu (KTM)</h3>
+                            <div class="autoAirport">
+                                <p class="autoAirportName">Tribhuvan International Airport</p>
+                                <p class="autoCountry">Nepal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="depart" class="searchfield point">
+                <input type="date" id="departDate" class="point">
+                <!-- <input type="date" name="" id="y"> -->
+            </div>
+            <div id="arrive" class="searchfield point">
+                <input type="date" id="arriveDate" class="point" value="0" placeholder="Return" disabled>
+            </div>
+            <div id="travel" class="point">
+                <div id="travellers" class="searchfield flexIt droptravel">
+                    <label for="" id="travellerCount" class="labl point">1 Traveller(s)</label>
+                    <img src="icons/down.png" alt="" class="icon">
+                </div>
+                <div id="travellerOption" class="options">
+                    <div class="flexpass">
+                        <div class="pass">
+                            <label for="" class="passType">Adult</label>
+                            <label for="" class="passAge">(12+ yrs)</label>
+                        </div>
+                        <div class="passCount flexIt">
+                            <button id="adult_del">-</button>
+                            <label for="" id="adultCount">1</label>
+                            <button id="adult_add">+</button>
+                        </div>
+                    </div>
+                    <div class="flexpass">
+                        <div class="pass">
+                            <label for="" class="passType">Children</label>
+                            <label for="" class="passAge">(2-12 yrs)</label>
+                        </div>
+                        <div class="passCount flexIt">
+                            <button id="children_del">-</button>
+                            <label for="" id="childrenCount">0</label>
+                            <button id="children_add">+</button>
+                        </div>
+                    </div>
+                    <div class="flexpass">
+                        <div class="pass">
+                            <label for="" class="passType">Infants</label>
+                            <label for="" class="passAge">(below 2 yrs)</label>
+                        </div>
+                        <div class="passCount flexIt">
+                            <button id="infant_del">-</button>
+                            <label for="" id="infantCount">0</label>
+                            <button id="infant_add">+</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <button id="travellerCountDone" class="classDone">Done</button>
+                    </div>
+                </div>
+            </div>
+            <div id="travelClass" class="point">
+                <div id="travellerClass" class="searchfield flexIt droptravel">
+                    <label for="" class="labl point" id="flightClass">Economy</label>
+                    <img src="icons/down.png" alt="" class="icon">
+                </div>
+                <div id="classOption" class="options">
+                    <div>
+                        <input class="point" type="radio" name="classes" id="economy" value="Economy" checked>
+                        <label class="point" for="economy">Economy</label>
+                    </div>
+                    <div>
+                        <input class="point" type="radio" name="classes" id="prem" value="Prem.Economy">
+                        <label class="point" for="prem">Prem.Economy</label>
+                    </div>
+                    <div>
+                        <input class="point" type="radio" name="classes" id="business" value="Business">
+                        <label class="point" for="business">Business</label>
+                    </div>
+                    <br>
+                    <div>
+                        <button id="classSubmit" class="classDone">Done</button>
+                    </div>
+                </div>
+            </div>
+            <div id="searchFlight" class="point">
+                <button id="finalSearch">
+                    <img src="icons/search.svg" alt="" class="icon">
+                    <div>
+                        SEARCH
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div id="search_end">
+            <div id="travellerType">
+                <div id="ttype">
+                    <div class="flexMe">
+                        <input type="radio" name="travl" id="defence" class="trvl" value="1">
+                        <label class="trvl_type" for="defence">Defence Forces</label>
+                    </div>
+                    <div class="flexMe">
+                        <input type="radio" name="travl" id="student" class="trvl" value="2">
+                        <label class="trvl_type" for="student">Students</label>
+                    </div>
+                    <div class="flexMe">
+                        <input type="radio" name="travl" id="senior" class="trvl" value="3">
+                        <label class="trvl_type" for="senior">Senior Citizens</label>
+                    </div>
+                    <div class="flexMe">
+                        <input type="radio" name="travl" id="doctor" class="trvl" value="4">
+                        <label class="trvl_type" for="doctor">Doctors & Nurses</label>
+                    </div>
+                    <div class="flexMe">
+                        <input type="radio" name="travl" id="train" class="trvl" value="5">
+                        <label class="trvl_type" for="train">Train Waitlisted</label>
+                    </div>
+                </div>
+            </div>
+            <div id="webcheck" class="flexIt">
+                <img src="icons/webcheck.PNG" class="icon" alt="">
+                <div>
+                    Web Check-In
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ................ravi...................... -->
+
+    <!-- Instruction -->
+    <div id="InstructionMainDiv">
+
+        <div id="InstructionSubDiv">
+            <div id="importantInfo">
+                <strong>Important Info:</strong> To cancel/claim refund or reschedule/modify your <br>booking. <a href="https://mybookings.easemytrip.com/" target="_blank" > click here</a>
+            </div>
+        
+            <div id="travelGuide">
+                <strong>Travel Guide:</strong> <a href="https://www.easemytrip.com/covid19-help.html" target="_blank" >Get latest information on airlines &amp; airports guidelines, <br>state-wise quarantine rules, travel checklists, web-checkin etc.</a>
+            </div>
+        </div>
+
+        
+
+        <div id="refundDiv">
+            <strong>FREE Full Refund due to Medical Reasons:</strong> EaseMyTrip brings an extraordinary offer in these tough times!<br>
+                    Get full refund for domestic ticket in case you cancel it due to medical sickness. Best Part - There are ZERO extra charges for this service.  <a href="https://www.easemytrip.com/pdf/Domestic-Flight-Cancellation-Insurance.pdf" target="_blank" style="color: #2196f3;">(View Coverage)</a>
+        </div>
+
+    </div>
+    <!-- offer section -->
+    <div id="offerSection">
     
+        <div id="offerSectionNav">
+            <div>
+                <h3>Exclusive Offers</h3>
+            </div>
+    
+    
+            <div id="offerSectionNavLinks">
+                <ul>
+                    <li><a href="">BEST OFFERS</a></li>
+                    <li><a href="">FLIGHT</a></li>
+                    <li><a href="">HOTEL</a></li>
+                    <li><a href="">BUS</a></li>
+                </ul>
+            </div>
+    
+            <div id="offerSectionNavScrollButton">
+
+                <div id="allOfferLink">
+                    <a href="">View All Offers</a>
+                </div>
+    
+                <div class="slideButton">
+                    <i class="fas fa-chevron-left btnIcon" onclick='removeId()'></i>
+                    <i class="fas fa-chevron-right btnIcon" onclick='addId()'></i>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+        <div class="container">
+    
+            <input type="radio" name="dot" id="on">
+            <input type="radio" name="dot" id="tw">
+    
+            <div class="main-card">
+    
+                <div class="cards">
+                    <div class="card">
+    
+                        <div class="content" id="offerSectionData">
+                        </div>
+    
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    
+    </div>
+
+    <!-- ...............top flight Routes..................... -->
+    <div class="grey_bg">
+        <div class="innerWrap">
+            <div class="excdeals">Top Flight Routes</div>
+            <div>
+                <div class="fl_container">
+                    <div class="lft_block">
+                        <div class="tab-content-lft current">
+
+                        </div>
+                    </div>
+                    <div class="rit_block">
+                        <div class="tab-content-rit current">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Travel Section -->
+
+    <div id="travelBlogSection">
+    
+        <div id="travelBlogSectionNav">
+
+            <div>
+                <h3>Travel Blog</h3>
+            </div>
+    
+            <div id="travelBlogScrollButton">
+                
+                <div id="allBlogLink">
+                    <a href="">View All Blog</a>
+                </div>
+                
+                <div id="travelBlogbutton" class="slideButton travelBlogSlideButton">
+                    <i class="fas fa-chevron-left btnIcon" onclick='removeIdtravel()'></i>
+                    <i class="fas fa-chevron-right btnIcon" onclick='addIdtravel()'></i>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    
+        <div class="container">
+    
+            <input type="radio" name="dot" id="on2">
+            <input type="radio" name="dot" id="twe">
+    
+            <div class="main-card">
+    
+                <div class="cards">
+                    <div class="card">
+    
+                        <div class="content" id="travelBlogsData">
+                        </div>
+    
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+
+    <!-- ..............pre footer part................... -->
+    <div class="mid_pnl">
+        <div class="innerWrap">
+            <h4>Search Flights, Hotels, Bus and Holiday Packages
+            </h4>
+            <div class="para">
+                EaseMyTrip.com is one of the topmost travel
+                companies of India and is a trusted name in the
+                Indian travel industry. It is also known for
+                providing the best travel deals to travelers. Being
+                a strong network of 52,752 travel agents (as of
+                September 30, 2019) and having more than 9.27
+                million direct customers, EaseMyTrip can satisfy all
+                your travel needs. Here, You can book flight
+                tickets, hotels, bus tickets, and holiday packages
+                at a cost-effective price. So, why go anywhere else?
+                Visit us for a memorable travel experience in your
+                budget.</div>
+        </div>
+    </div>
+
+    <div class="bottom_bdr_h">
+        <div class="dark_clr_h">Why Book With Us?</div>
+        <div class="light_clr_h">
+            <div class="col_bot_1">
+                <div class="img_col"><span class="eb_hp_i"></span>
+                </div>
+                <div class="rit_col">
+                    <h6>Easy Booking</h6>
+                    <p>We offer easy and convenient flight bookings
+                        with attractive offers.</p>
+                </div>
+            </div>
+            <div class="col_bot_1">
+                <div class="img_col"><span class="lp_hp_i"></span>
+                </div>
+                <div class="rit_col">
+                    <h6>Lowest Price</h6>
+                    <p>We ensure low rates on hotel reservation,
+                        holiday packages and on flight tickets.</p>
+                </div>
+            </div>
+            <div class="col_bot_1">
+                <div class="img_col"><span class="ed_hp_i"></span>
+                </div>
+                <div class="rit_col">
+                    <h6>Exciting Deals</h6>
+                    <p>Enjoy exciting deals on flights, hotels,
+                        buses, car rental and tour packages.</p>
+                </div>
+            </div>
+            <div class="col_bot_1">
+                <div class="img_col"><span class="sp_hp_i"></span>
+                </div>
+                <div class="rit_col">
+                    <h6>24/7 Support</h6>
+                    <p>Get assistance 24/7 on any kind of travel
+                        related query. We are happy to assist you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer part -->
+    <div id="placeFooter"></div>
+
+
 </body>
+
 </html>
+
+<script src="./home/home.js" type="module"></script>
+<script type="" src="scripts/index.js"></script>
+<script src="./scripts/index.js"></script>
