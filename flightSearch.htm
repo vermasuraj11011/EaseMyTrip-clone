@@ -28,7 +28,141 @@
     </div>
     <!-- Prottay -->
 
-    
+    <div id="search">
+        <div id="search_catagory">
+            <ul>
+                <li id="one" class="search_cat">One-Way</li>
+                <li id="round" class="search_cat">Round-Way</li>
+                <li id="multi" class="search_cat">Multi-City</li>
+            </ul>
+        </div>
+        <div id="search_box" class="flexIt">
+            <div id="fromBox" class="">
+                <div id="frombox" class="searchfield flexIt">
+                    <input type="text" name="" id="from" placeholder="From">
+                    <div id="swap">
+                        <img src="icons/change1.PNG" alt="" class="" id="">
+                    </div>
+                </div>
+                <div id="fromResults" class="airportAutocomplete"></div>
+            </div>
+            <div id="toBox" class="">
+                <div id="tobox" class="searchfield">
+                    <input type="text" name="" id="to" placeholder="To">
+                </div>
+                <div id="toResults" class="airportAutocomplete"></div>
+            </div>
+            <div id="depart" class="searchfield point">
+                <input type="date" id="departDate" class="point">
+            </div>
+            <div id="arrive" class="searchfield point">
+                <input type="date" id="arriveDate" class="point" value="0" placeholder="Return" disabled>
+            </div>
+            <div id="travel" class="point">
+                <div id="travellers" class="searchfield flexIt droptravel">
+                    <label for="" id="travellerCount" class="labl point">1 Traveller(s)</label>
+                    <img src="icons/down.png" alt="" class="icon">
+                </div>
+                <div id="travellerOption" class="options">
+                    <div class="flexpass">
+                        <div class="pass">
+                            <label for="" class="passType">Adult</label>
+                            <label for="" class="passAge">(12+ yrs)</label>
+                        </div>
+                        <div class="passCount flexIt">
+                            <button id="adult_del">-</button>
+                            <label for="" id="adultCount">1</label>
+                            <button id="adult_add">+</button>
+                        </div>
+                    </div>
+                    <div class="flexpass">
+                        <div class="pass">
+                            <label for="" class="passType">Children</label>
+                            <label for="" class="passAge">(2-12 yrs)</label>
+                        </div>
+                        <div class="passCount flexIt">
+                            <button id="children_del">-</button>
+                            <label for="" id="childrenCount">0</label>
+                            <button id="children_add">+</button>
+                        </div>
+                    </div>
+                    <div class="flexpass">
+                        <div class="pass">
+                            <label for="" class="passType">Infants</label>
+                            <label for="" class="passAge">(below 2 yrs)</label>
+                        </div>
+                        <div class="passCount flexIt">
+                            <button id="infant_del">-</button>
+                            <label for="" id="infantCount">0</label>
+                            <button id="infant_add">+</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <button id="travellerCountDone" class="classDone">Done</button>
+                    </div>
+                </div>
+            </div>
+            <div id="travelClass" class="point">
+                <div id="travellerClass" class="searchfield flexIt droptravel">
+                    <label for="" class="labl point" id="flightClass">Economy</label>
+                    <img src="icons/down.png" alt="" class="icon">
+                </div>
+                <div id="classOption" class="options">
+                    <div>
+                        <input class="point" type="radio" name="classes" id="economy" value="Economy" checked>
+                        <label class="point" for="economy">Economy</label>
+                    </div>
+                    <div>
+                        <input class="point" type="radio" name="classes" id="prem" value="Prem.Economy">
+                        <label class="point" for="prem">Prem.Economy</label>
+                    </div>
+                    <div>
+                        <input class="point" type="radio" name="classes" id="business" value="Business">
+                        <label class="point" for="business">Business</label>
+                    </div>
+                    <br>
+                    <div>
+                        <button id="classSubmit" class="classDone">Done</button>
+                    </div>
+                </div>
+            </div>
+            <div id="searchFlight" class="point">
+                <button id="finalSearch">
+                    <img src="icons/search.svg" alt="" class="icon">
+                    <div>
+                        SEARCH
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div id="search_end">
+            <div id="travellerType">
+                <div id="ttype">
+                    <div class="flexMe">
+                        <input type="radio" name="travl" id="defence" class="trvl" value="1">
+                        <label class="trvl_type" for="defence">Defence Forces</label>
+                    </div>
+                    <div class="flexMe">
+                        <input type="radio" name="travl" id="student" class="trvl" value="2">
+                        <label class="trvl_type" for="student">Students</label>
+                    </div>
+                    <div class="flexMe">
+                        <input type="radio" name="travl" id="senior" class="trvl" value="3">
+                        <label class="trvl_type" for="senior">Senior Citizens</label>
+                    </div>
+                    <div class="flexMe">
+                        <input type="radio" name="travl" id="doctor" class="trvl" value="4">
+                        <label class="trvl_type" for="doctor">Doctors & Nurses</label>
+                    </div>
+                    <div class="flexMe">
+                        <input type="radio" name="travl" id="train" class="trvl" value="5">
+                        <label class="trvl_type" for="train" >Train Waitlisted</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="flightBody">
         <div id="nextPrev">
@@ -211,11 +345,11 @@
 
                 </div>
                 <div id="rightfilter" class="flexSpace">
-                    <div id="airlines" class="littlefilter">
+                    <div id="airlinesBooking" class="littlefilter">
                         AIRLINES
                         <img src="icons/arrowdown.png" class="mini-icon" alt="">
                     </div>
-                    <div id="depart" class="littlefilter">
+                    <div id="departBooking" class="littlefilter">
                         DEPART
                         <img src="icons/arrowdown.png" class="mini-icon" alt="">
                     </div>
@@ -223,11 +357,11 @@
                         DURATION
                         <img src="icons/arrowdown.png" class="mini-icon" alt="">
                     </div>
-                    <div id="arrive" class="littlefilter">
+                    <div id="arriveBooking" class="littlefilter">
                         ARRIVE
                         <img src="icons/arrowdown.png" class="mini-icon" alt="">
                     </div>
-                    <div id="price" class="littlefilter">
+                    <div id="priceBooking" class="littlefilter">
                         PRICE
                         <img src="icons/arrowdown.png" class="mini-icon" alt="">
                     </div>
@@ -332,6 +466,7 @@
     </div>
 </body>
 </html>
+<script src="./scripts/flightSearch.js"></script>
 <script type="module" src="./home/home.js"></script>
 
 <script type="module"> 

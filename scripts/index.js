@@ -572,18 +572,18 @@ async function searchAutoComplete(destination, results, feed) {
         });
         
     } else {
-        let a = await fetch(`https://airportix.p.rapidapi.com/autocomplete/airport/`, {
-            "method": "POST",
-            "headers": {
-                "content-type": "application/x-www-form-urlencoded",
-                "x-rapidapi-host": "airportix.p.rapidapi.com",
-                "x-rapidapi-key": "e41ac5f444mshb544d722349d34cp12a1c9jsn14405c0bb667"
-            },
-            "body": {
-                "query": feed
-            }
-        });
-        let b = await a.json();
+        // let a = await fetch(`https://airportix.p.rapidapi.com/autocomplete/airport/`, {
+        //     "method": "POST",
+        //     "headers": {
+        //         "content-type": "application/x-www-form-urlencoded",
+        //         "x-rapidapi-host": "airportix.p.rapidapi.com",
+        //         "x-rapidapi-key": "e41ac5f444mshb544d722349d34cp12a1c9jsn14405c0bb667"
+        //     },
+        //     "body": {
+        //         "query": feed
+        //     }
+        // });
+        // let b = await a.json();
     }
     
 
