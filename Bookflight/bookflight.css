@@ -545,6 +545,12 @@ svg{
     margin-top: -6%;
  }
 
+ #continueButton:hover{
+     background-color: rgb(202, 73, 14);
+     border: 1px solid rgb(202, 73, 14);
+     transition: all 0.4 ease;
+ }
+
 @media only screen and (max-width:1355px){
     .fa-plane{
         margin-left: -31.3%;
