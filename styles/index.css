@@ -254,6 +254,7 @@
     border-radius: 4px;
     margin-left: 256px;
     cursor: pointer;
+    color: white;
 }
 #fromBox{
     overflow: visible;
@@ -325,4 +326,7 @@
 .autoAirportName {
     width: 200px;
     margin-right: 16px;
+}
+a {
+    text-decoration: none;
 }

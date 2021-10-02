@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/flightSearch.css">
+
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <title>FlightList Lowest Airfare, Flight Tickets, Cheap Air Tickets - EaseMyTrip.com</title>
+</head>
+<body>
+    <!-- Prottay -->
+    <div id="flightBody">
+        <div id="nextPrev">
+            <div class="flexCenter">
+                <a href="http://" target="_blank" rel="noopener noreferrer">Previous Day </a>
+                <p> &nbsp; | &nbsp;</p>
+                <a href="http://" target="_blank" rel="noopener noreferrer"> Next Day </a>
+            </div>
+        </div>
+        <div id="main">
+            <div id="left">
+                <div id="leftHead" class="flexSpace left">
+                    <label for="">FILTER</label>
+                    <label for="" class="blue">CLEAR ALL</label>
+                </div>
+                <div id="leftPrice" class="left left_entry">
+                    <div class="dropdown flexLeft">
+                        <img src="icons/down-arrow.png" id="price_icon" class="dropicon down" alt="">
+                        <label for="price_icon">Price Range</label>
+                    </div>
+                    <div class="left_body">
+                        <div class="">
+                            <input type="range" name="pricerange" id="pricerange" class="range" min="0" max="100">
+                        </div>
+                        <div>
+                            <label for="" id="fromPrice">Rs. 5555 - &nbsp;</label>
+                            <label for="" id="toPrice">Rs. 10,000</label>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="leftDeparture" class="left left_entry">
+                    <div class="dropdown flexLeft">
+                        <img src="icons/down-arrow.png" id="departure_icon" class="dropicon down" alt="">
+                        <label for="price_icon">Departure time from </label>
+                        <label for="" id="departLeft"> Delhi</label>
+                    </div>
+                    <div class="left_body">
+                        <div class="">
+                            <input type="range" name="pricerange" id="pricerange" class="range" min="1" max="24">
+                        </div>
+                        <div>
+                            <label for="" id="">0 Hr - &nbsp;</label>
+                            <label for="" id="toHourDepart">24 Hr</label>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="leftArrival" class="left left_entry">
+                    <div class="dropdown flexLeft">
+                        <img src="icons/down-arrow.png" id="arrival_icon" class="dropicon down" alt="">
+                        <label for="price_icon">Arrival time at </label>
+                        <label for="" id="arriveLeft"> Mumbai</label>
+                    </div>
+                    <div class="left_body">
+                        <div class="">
+                            <input type="range" name="pricerange" id="pricerange" class="range" min="1" max="24">
+                        </div>
+                        <div>
+                            <label for="" id="">0 Hr - &nbsp;</label>
+                            <label for="" id="toHourArrive">24 Hr</label>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div id="leftStop" class="left left_entry">
+                    <div class="flexSpace">
+                        <div class="dropdown flexLeft">
+                            <img src="icons/down-arrow.png" id="price_icon" class="dropicon down" alt="">
+                            <label for="price_icon">Stops</label>
+                        </div>
+                        <div class="flexCenter showall">
+                            <input type="checkbox" name="" id="stopsAll">
+                            <label for="stopsAll">Show All</label>
+                        </div>
+                    </div>
+                    <div class="left_body">
+                        <br>
+                        <div class="flexLeft leftOption">
+                            <input type="checkbox" name="" id="nonstop">
+                            <label for="nonstop">Non Stop</label>
+                        </div>
+                        <div class="flexLeft leftOption">
+                            <input type="checkbox" name="" id="onestop">
+                            <label for="onestop">One Stop</label>
+                        </div>
+                        <div class="flexLeft leftOption">
+                            <input type="checkbox" name="" id="twostop">
+                            <label for="twostop">2+ Stops</label>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="leftAirlines" class="left left_entry">
+                    <div class="flexSpace">
+                        <div class="dropdown flexLeft">
+                            <img src="icons/down-arrow.png" id="price_icon" class="dropicon down" alt="">
+                            <label for="price_icon">Airlines</label>
+                        </div>
+                        <div class="flexCenter showall">
+                            <input type="checkbox" name="" id="airlinesAll">
+                            <label for="airlinesAll">Show All</label>
+                        </div>
+                    </div>
+                    <div class="left_body">
+                        <br>
+                        <div class="flexSpace leftOption">
+                            <div class="leftOption">
+                                <input type="checkbox" name="" id="gofirst">
+                                <label for="gofirst">
+                                    <img src="icons/gofirst.png" class="dropicon" alt="">
+                                    Go First
+                                </label>
+                            </div>
+                            <label for="" id="gofirstmin">Rs. 5945</label>
+                        </div>
+                        <div class="flexSpace leftOption">
+                            <div class="leftOption">
+                                <input type="checkbox" name="" id="indigo">
+                                <label for="indigo">
+                                    <img src="icons/indigo.jpg" class="dropicon" alt="">
+                                    Indigo
+                                </label>
+                            </div>
+                            <label for="" id="indigomin">Rs. 5945</label>
+                        </div>
+                        <div class="flexSpace leftOption">
+                            <div class="leftOption">
+                                <input type="checkbox" name="" id="airindia">
+                                <label for="airindia">
+                                    <img src="icons/airindia.jpg" class="dropicon" alt="">
+                                    Air India
+                                </label>
+                            </div>
+                            <label for="" id="airindiamin">Rs. 5945</label>
+                        </div>
+                        <div class="flexSpace leftOption">
+                            <div class="leftOption">
+                                <input type="checkbox" name="" id="airasia">
+                                <label for="airasia">
+                                    <img src="icons/airasia.png" class="dropicon" alt="">
+                                    Air Asia
+                                </label>
+                            </div>
+                            <label for="" id="airasiamin">Rs. 5945</label>
+                        </div>
+                        <div id="lastTwo">
+                            <div class="flexSpace leftOption">
+                                <div class="leftOption">
+                                    <input type="checkbox" name="" id="spicejet">
+                                    <label for="spicejet">
+                                        <img src="icons/spicejet.png" class="dropicon" alt="">
+                                        Spicejet
+                                    </label>
+                                </div>
+                                <label for="" id="spicejetmin">Rs. 5945</label>
+                            </div>
+                            <div class="flexSpace leftOption">
+                                <div class="leftOption">
+                                    <input type="checkbox" name="" id="vistara">
+                                    <label for="vistara">
+                                        <img src="icons/vistara.png" class="dropicon" alt="">
+                                        Vistara
+                                    </label>
+                                </div>
+                                <label for="" id="vistaramin">Rs. 5945</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="" id="moreair"> Show less - </label>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="right">
+                <div id="carausel">
+
+                </div>
+                <div id="rightfilter" class="flexSpace">
+                    <div id="airlines" class="littlefilter">
+                        AIRLINES
+                        <img src="icons/arrowdown.png" class="mini-icon" alt="">
+                    </div>
+                    <div id="depart" class="littlefilter">
+                        DEPART
+                        <img src="icons/arrowdown.png" class="mini-icon" alt="">
+                    </div>
+                    <div id="duration" class="littlefilter">
+                        DURATION
+                        <img src="icons/arrowdown.png" class="mini-icon" alt="">
+                    </div>
+                    <div id="arrive" class="littlefilter">
+                        ARRIVE
+                        <img src="icons/arrowdown.png" class="mini-icon" alt="">
+                    </div>
+                    <div id="price" class="littlefilter">
+                        PRICE
+                        <img src="icons/arrowdown.png" class="mini-icon" alt="">
+                    </div>
+                    <div id="" class="littlefilter">
+                        RECOMMENDED
+                        <div id="recommended">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="bookBox">
+                    <div class="bookMain flexSpace">
+                        <div class="airlineInfo flexCenter">
+                            <img src="icons/spicejet.png" class="airlogo" alt="">
+                            <div class="flexColumn">
+                                <label for="" class="airname">Spicejet</label>
+                                <label for="" class="air_no smallAirDetails">SG 611</label>
+                            </div>
+                        </div>
+                        <div class="flexColumn ">
+                            <label for="" class="takeOff">18:40</label>
+                            <label for="" class="fromCity">Delhi</label>
+                        </div>
+                        <div class="flexColumn">
+                            <label for="" class="airDuration">02h 00m</label>
+                            <img src="icons/arow_main.png" class="sidearrow" alt="">
+                            <label for="" class="nonstop">non-stop</label>
+                        </div>
+                        <div class="flexColumn">
+                            <label for="" class="landing">20:40</label>
+                            <label for="" class="toCity">Mumbai</label>
+                        </div>
+                        <div class="flexColumn">
+                            <label for="" class="airprice">₹ 20:40</label> <br>
+                            <label for="" class="morefare"> + More Fare </label>
+                        </div>
+                        <button class="book flexCenter">
+                            BOOK NOW
+                        </button>
+                    </div>
+                    <div class="bookMain flexSpace">
+                        <div class="airlineInfo flexCenter">
+                            <img src="icons/spicejet.png" class="airlogo" alt="">
+                            <div class="flexColumn">
+                                <label for="" class="airname">Spicejet</label>
+                                <label for="" class="air_no smallAirDetails">SG 611</label>
+                            </div>
+                        </div>
+                        <div class="flexColumn ">
+                            <label for="" class="takeOff">18:40</label>
+                            <label for="" class="fromCity">Delhi</label>
+                        </div>
+                        <div class="flexColumn">
+                            <label for="" class="airDuration">02h 00m</label>
+                            <img src="icons/arow_main.png" class="sidearrow" alt="">
+                            <label for="" class="nonstop">non-stop</label>
+                        </div>
+                        <div class="flexColumn">
+                            <label for="" class="landing">20:40</label>
+                            <label for="" class="toCity">Mumbai</label>
+                        </div>
+                        <div class="flexColumn">
+                            <label for="" class="airprice">₹ 20:40</label> <br>
+                            <label for="" class="morefare"> + More Fare </label>
+                        </div>
+                        <button class="book flexCenter">
+                            BOOK NOW
+                        </button>
+                    </div>
+                    <div class="bookMain flexSpace">
+                        <div class="airlineInfo flexCenter">
+                            <img src="icons/spicejet.png" class="airlogo" alt="">
+                            <div class="flexColumn">
+                                <label for="" class="airname">Spicejet</label>
+                                <label for="" class="air_no smallAirDetails">SG 611</label>
+                            </div>
+                        </div>
+                        <div class="flexColumn ">
+                            <label for="" class="takeOff">18:40</label>
+                            <label for="" class="fromCity">Delhi</label>
+                        </div>
+                        <div class="flexColumn">
+                            <label for="" class="airDuration">02h 00m</label>
+                            <img src="icons/arow_main.png" class="sidearrow" alt="">
+                            <label for="" class="nonstop">non-stop</label>
+                        </div>
+                        <div class="flexColumn">
+                            <label for="" class="landing">20:40</label>
+                            <label for="" class="toCity">Mumbai</label>
+                        </div>
+                        <div class="flexColumn">
+                            <label for="" class="airprice">₹ 20:40</label> <br>
+                            <label for="" class="morefare"> + More Fare </label>
+                        </div>
+                        <button class="book flexCenter">
+                            BOOK NOW
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="module" src="scripts/flightSearch.js"></script>
