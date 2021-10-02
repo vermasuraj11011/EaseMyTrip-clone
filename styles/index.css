@@ -912,9 +912,11 @@ border: 1px solid #f1dfab;
   }
 
 
-  #on, #tw{
+  #on, #tw, #two, #on2,#twe{
     display: none;
   }
+
+
 
 
   /* Payment Page */
