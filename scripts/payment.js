@@ -1,4 +1,4 @@
-import navbar from "../header/header.js";
+import navbar from "../component/header.js";
 
 let headerPlace = document.getElementById('placeHeader');
 
