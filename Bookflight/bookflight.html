@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="..\styles\header.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="bookflight.css">
+</head>
+<body>
+    
+  <div id="placeHeader"></div>
+  
+ <!-- Ticket Detials start--> 
+
+   <div id="flightDetials">
+     <div class="heading"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsAqT8HjqxXMf5NDQziWt9sPVbQEgEmS3zhg&usqp=CAU" alt=""> <p>Flight Detial</p> </div>
+     <div id="innerBOx">
+        <p id="tag">DEPART</p>
+        <span class="material-icons  flight-logo">flight_takeoff</span>
+        <p id="flightRoute">Delhi - Mumbai</p>
+        <p class="horizontalLine"></p>
+        <p id="departDate">Thu-30Sep2021 </p>
+        <p class="clear"></p>
+        <img id="airlinelogo" src="https://flight.easemytrip.com/Content/AirlineLogon/SG.png" alt="">
+        <p id="Carrier"> SpiceJet</p>
+        <p id="departTime">20:20</p>
+        <p id="duration">02h 20m </p>
+        <p class="leftDot"></p>
+        <p class="dotttedLine"></p>
+        <i class="fa fa-plane" aria-hidden="true"></i>
+        <svg height="30" width="30" >
+            <circle cx="14" cy="14" r="14" stroke="gray" stroke-width="1.3" fill="white" />
+            Sorry, your browser does not support inline SVG.  
+        </svg>
+        <p class="rightDot"></p>
+        <p id="landingDate">22:40</p>
+         <br>
+        <p id="aircraftName">SG-507</p>
+        <p id="source">Delhi(DEL)</p>
+        <p class="refundable">REFUNDABLE</p>
+        <p id="destination">Mumbai(BOM)</p>
+        <br>
+        <p id="takeoffDate">Thu-30Sep2021</p>
+        <p id="arrivalDate">Thu-30Sep2021</p>
+        <br>
+        <p id="sourcerTerminal"> Terminal - 3</p>
+        <p id="destinTerminal">Terminal-2</p>
+        <p class="clear"></p>
+     </div>
+   </div>
+  <!-- Ticket Detials start--> 
+   
+   <!-- Price Summay start-->
+  
+   <div id="priceSummary"> 
+       <div id="priceSmrHead" class="heading"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Indian_Rupee_symbol_in_circle_PD_version.svg/768px-Indian_Rupee_symbol_in_circle_PD_version.svg.png" alt="">
+        <p>Price Summary</p>
+        <i class="fa fa-male" aria-hidden="true"></i> 
+        
+       </div>
+       <p id="adult">1</p>
+       <i class="fa fa-child" aria-hidden="true"></i>
+       <p id="child">0</p>
+       <span class="material-icons infantLogo ">child_care</span>
+       <p id="infant">0</p>
+       <div class="pricesmrLine1"> 
+           <p>Adult x 1</p>
+           <p id="price">&#8377 5176</p>
+       </div>
+       <hr>
+       <div class="pricesmrLine1"> 
+         <p>Total Taxes +</p>
+         <p id="price">&#8377 779</p>
+       </div>
+       <hr>
+       <div class="pricesmrLine1"> 
+        <p class="grandTotal">Grand Total</p>
+        <p id="price" class="grandTotal">&#8377 5955</p>
+       </div>
+   </div>
+
+   <!-- Price Summay end-->
+
+    
+   <!-- Medical Refund Policy start-->
+
+   <div id="medicalRefund">
+      <div class="medicalRefundHead">
+        <img src="https://flight.easemytrip.com/Content/img/coverage-icon-v1.svg" alt="">
+        <p>FREE Medical Refund Policy</p>
+        <img src="https://flight.easemytrip.com/Content/img/blueticknw.svg" alt="">
+        <a href="#">Policy Coverage</a>
+      </div>
+       
+      <div class="WantRefundRadio">
+          <input type="radio" id="yesWantRefund" name="wantrefund" value="yes">
+          <p>Yes,I want to add Mediacl Refund Policy(Free) to this flight</p>
+      </div>
+      <div class="WantRefundRadio">
+        <input type="radio" id="dontsWantRefund" name="wantrefund" value="no">
+        <p>No,I don't wish to add Medical Refund Policy(Free) to this flight</p>
+     </div>
+   </div>
+            
+   <!-- Medical Refund Policy End-->
+
+   <!-- coupon code apply box start -->
+
+   <div id="couponCodeDiv">
+     <div class="cpnCodeHead">
+       <p>Have a coupon code / Gift Voucher No ? ?</p>
+     </div>
+     <input type="text" class="no-outline" placeholder="ENTER COUPON CODE">
+     <button id="applyCoupon" >Apply</button>
+     <hr>
+     <div id="coupounS">
+        <div>
+           <input type="radio" name="couponApplY" id="couponRadio">
+           <div class="makeThemHorizonatal">
+             <h4>EMTNCF</h4>
+             <p>ZERO Convenience Fees</p>
+           </div>
+        </div>
+        
+        <div>
+           <input type="radio" name="couponApplY" id="couponRadio">
+           <div class="makeThemHorizonatal">
+             <h4>EASEGLY</h4>
+             <p>Use this Coupon and get Rs.350 on your flight booking.</p>
+           </div>
+        </div>
+       
+
+        <div>
+           <input type="radio" name="couponApplY" id="couponRadio">
+           <div class="makeThemHorizonatal">
+             <h4>EMTLOUNGE</h4>
+             <p>Get free access to lounge worth Rs.1400  per passenger.</p>
+           </div>
+        </div>
+         
+      </div>
+     </div>
+   </div>
+  <!-- coupon code apply box end -->
+
+
+   <!-- Good to Know Start -->
+
+   <div id="goodTOKnow">
+      <div class="goodTOKnowHead">
+        <img src="https://flight.easemytrip.com/m_content/img/f-icon-9.png" alt="">
+         <div class="goodtoKnowHeaddiv"> 
+          <p>Good to Know</p>
+          <p class="goodtoknwheadInfo">Information you should know</p>
+         </div>  
+      </div>
+       
+      <ul class="goodtoknowList">
+          <li>25 Kgs per passenger Check-in Baggage included for your selected flight on the sector  Delhi to Mumbai</li>
+          <li>Airline Cancellation Fee is Rs 3710 per passenger for your selected flight on the sector Delhi to Mumbai</li>
+          <li>Certify your health status through the Aarogya Setu app or the self-declaration form at the airport</li>
+          <li>Remember to web check-in before arriving at the airport</li>
+          <li>Face masks are compulsory</li>
+      </ul>
+   </div>
+    <!-- Good to Know End -->
+
+    <a id="continueButton" href="#"> Continue Booking</a>
+
+</div>
+
+    
+</body>
+</html>
+
+<script src="bookflight.js" type="module"></script>
