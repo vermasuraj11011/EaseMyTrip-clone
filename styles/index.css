@@ -912,7 +912,7 @@ border: 1px solid #f1dfab;
   }
 
 
-  input[type="radio"]{
+  #on, #tw{
     display: none;
   }
 
