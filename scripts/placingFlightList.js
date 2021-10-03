@@ -51,6 +51,8 @@ async function displayBook() {
 		placingBookingFlight.textContent = 'No flight found';
 		placingBookingFlight.style.fontSize = '30px';
 		placingBookingFlight.style.color = 'red';
+		placingBookingFlight.style.textAlign = 'center';
+
 		// console.log('data');
 	}
 	// console.log('data:', data);

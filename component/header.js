@@ -1,6 +1,6 @@
 function header() {
-    return `<div class="navbar">
-    <div> <a id="websitelogo" href=""> <img href="" src="https://searchlogovector.com/wp-content/uploads/2019/04/easemytrip-com-logo-vector.png" alt=""> </a>  </div>
+	return `<div class="navbar">
+    <div> <a id="websitelogo" href="./index.html"> <img href="" src="https://searchlogovector.com/wp-content/uploads/2019/04/easemytrip-com-logo-vector.png" alt=""> </a>  </div>
     <a href="#home">FLIGHTS</a>
     <p class="horizontal-Line"></p>
     <a href="#news"> HOTELS  </a>
