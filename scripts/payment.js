@@ -1,4 +1,9 @@
+
+
+
+
 //display id of the user on the navbar
+
 setTimeout(() => {
 	let signUpAppend = JSON.parse(localStorage.getItem('signUp'));
 	if (signUpAppend[0].isCorrect === true) {
@@ -16,3 +21,4 @@ import navbar from '../component/header.js';
 let headerPlace = document.getElementById('placeHeader');
 
 headerPlace.innerHTML = navbar();
+
