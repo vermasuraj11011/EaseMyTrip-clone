@@ -170,7 +170,7 @@
      font-size: 20px;
      color: gray;
      margin-top: 23px;
-     margin-left: -30.4%;
+     margin-left: -30.9%;
  }
  
  #landingDate{
@@ -197,7 +197,7 @@
      font-size: 12px;
      line-height: 17px;
      font-weight:600;
-     margin-left: 17%;
+     margin-left: 15%;
      margin-top: -10px;
  }
  
@@ -222,7 +222,7 @@
      font-size: 12px;
      line-height: 17px;
      font-weight:600;
-     margin-left: 16%;
+     margin-left: 14.7%;
      margin-top: -10px;
  }
  
@@ -232,7 +232,7 @@
      font-size: 12px;
      line-height: 17px;
      font-weight:600;
-     margin-left: -35.9%;
+     margin-left: -36.9%;
      margin-top: -15px;
  }
  #arrivalDate{
@@ -241,7 +241,7 @@
      font-size: 12px;
      line-height: 17px;
      font-weight:600;
-     margin-left: 15.9%;
+     margin-left: 14.9%;
      margin-top: -15px;
  }
  #sourcerTerminal{
@@ -250,7 +250,7 @@
      font-size: 12px;
      line-height: 17px;
      font-weight:600;
-     margin-left: 29.3%;
+     margin-left: 28.8%;
      margin-top: -20px;
  }
  
@@ -260,27 +260,40 @@
      font-size: 12px;
      line-height: 17px;
      font-weight:600;
-     margin-left: 81.1%;
+     margin-left: 81%;
      margin-top: -20px;
  }
-/*  
+
  @media only screen and (max-width:1355px){
      .fa-plane{
-         margin-left: -31.3%;
+         margin-left: -31.7%;
      }
      
-     #takeoffDate{
-         margin-left: -36.8%;
+     #source{
+         margin-left: 15%;
      }
+
+     #takeoffDate{
+         margin-left: -37.8%;
+     }
+
+     #arrivalDate{
+         margin-left: 15.3%;
+     }
+
+     #destination{
+        margin-left: 15.4%;
+     }
+
      #sourcerTerminal{
          margin-left: 30.3% ;
      }
      #destinTerminal{
-         margin-left: 82.9%;
+         margin-left: 83.3%;
      }
  }
  
- 
+ /*
  @media only screen and (max-width:1230px){
      .fa-plane{
          margin-left: -32%;

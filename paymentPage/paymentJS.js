@@ -89,4 +89,5 @@ localStorage.setItem("grandTotalAmount",payAmount);
 
 document.getElementById("payableamount").innerHTML = `&#8377  ${payAmount} `;
 
-document.getElementById("payableamount").innerText = ` ${payAmount} `;
+
+ 
