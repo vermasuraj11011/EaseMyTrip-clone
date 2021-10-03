@@ -11,7 +11,6 @@ setTimeout(() => {
 	}
 }, 500);
 
-
 import navbar from '../component/header.js';
 
 let headerPlace = document.getElementById('placeHeader');
@@ -29,22 +28,18 @@ headerPlace.innerHTML = navbar();
 // 	"price" : 4555,
 // 	"takeoff_time": "10:30"
 // };
- 
-
-
-
 
 //localStorage.setItem("bookingDetailOfUser",JSON.stringify(ticketObj));  nnot used
 
+let bookedTicket = JSON.parse(localStorage.getItem('bookingDetailOfUSer'));
 
-let  bookedTicket = JSON.parse(localStorage.getItem("bookingDetailOfUser"));
+let userDetail = JSON.parse(localStorage.getItem('searchQuery'));
 
-let userDetail = JSON.parse(localStorage.getItem("searchQuery"));
-
+// console.log(bookedTicket.flight;
 
 function timeDiff() {
-	let tOff = bookedTicket.takeoff_time;
-	let landIng = bookedTicket.landing_time;
+	let tOff = bookedTicket.flight.takeoff_time;
+	let landIng = bookedTicket.flight.landing_time;
 
 	let toffInMin = parseInt(tOff.slice(0, 2)) * 60 + parseInt(tOff.slice(3, 6));
 	let landIngInMin = parseInt(landIng.slice(0, 2)) * 60 + parseInt(landIng.slice(3, 6));
@@ -58,40 +53,39 @@ function timeDiff() {
 	return `${hrs}h ${min}m`;
 }
 
+document.getElementById('flightRoute').innerHTML = `${bookedTicket.flight.source}-${bookedTicket.flight.destination}`;
 
+document.getElementById('departDate').innerHTML = bookedTicket.flight.journey_date;
 
-document.getElementById("flightRoute").innerHTML = `${bookedTicket.source}-${bookedTicket.destination}`;
+document.getElementById('Carrier').innerHTML = bookedTicket.flight.airline_name;
 
-document.getElementById("departDate").innerHTML = bookedTicket.journey_date;
+document.getElementById('departTime').innerText = bookedTicket.flight.takeoff_time;
 
-document.getElementById("Carrier").innerHTML = bookedTicket.airline_name;
+document.getElementById('duration').innerHTML = `${timeDiff()}`;
 
-document.getElementById("departTime").innerText = bookedTicket.takeoff_time;
+document.getElementById('landingDate').innerText = bookedTicket.flight.landing_time;
 
-document.getElementById("duration").innerHTML = `${timeDiff()}`;
+document.getElementById('aircraftName').innerHTML = `${bookedTicket.flight.aircraft_code} - ${bookedTicket.flight
+	.aircraft_number}`;
 
-document.getElementById("landingDate").innerText = bookedTicket.landing_time;
+document.getElementById('source').innerText = bookedTicket.flight.source;
 
-document.getElementById("aircraftName").innerHTML = `${bookedTicket.aircraft_code} - ${bookedTicket.aircraft_number}`;
+document.getElementById('destination').innerText = bookedTicket.flight.destination;
 
-document.getElementById("source").innerText = userDetail.from;
+document.getElementById('takeoffDate').innerText = userDetail.depart;
 
-document.getElementById("destination").innerText = userDetail.to;
+document.getElementById('arrivalDate').innerText = userDetail.arrive;
 
-document.getElementById("takeoffDate").innerText = userDetail.depart;
+document.getElementById('adult').innerText = userDetail.adultCount;
 
-document.getElementById("arrivalDate").innerText = userDetail.arrive;
+document.getElementById('child').innerText = userDetail.childrenCount;
 
-document.getElementById("adult").innerText =userDetail.adultCount;
+document.getElementById('infant').innerText = userDetail.infantCount;
 
-document.getElementById("child").innerText = userDetail.childrenCount;
+document.getElementById('price').innerHTML = `&#8377  ${bookedTicket.flight.price} `;
 
-document.getElementById("infant").innerText = userDetail.infantCount;
+var payAmount = bookedTicket.flight.price + 779;
 
-document.getElementById("price").innerHTML =`&#8377  ${bookedTicket.price} `;
+localStorage.setItem('grandTotalAmount', payAmount);
 
-var payAmount = bookedTicket.price + 779;
-
-localStorage.setItem("grandTotalAmount",payAmount);
-
-document.getElementById("payableamount").innerHTML = `&#8377  ${payAmount} `;
+document.getElementById('payableamount').innerHTML = `&#8377  ${payAmount} `;
