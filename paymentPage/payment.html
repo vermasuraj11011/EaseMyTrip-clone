@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment</title>
-    <link rel="stylesheet" href="./styles/payment.css">
+    <link rel="stylesheet" href="../styles/payment.css">
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="../styles/header.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link
      rel="stylesheet"
@@ -117,7 +117,7 @@
                         <div id="cardPayment">
                             <p>Enter Your Card Number</p>
                             <div id="inputCardNumber">
-                                <input type="text" placeholder="xxxx xxxx xxxx xxxx">
+                                <input type="text" maxlength = "16" placeholder="xxxx xxxx xxxx xxxx">
                                 <!-- <div id="imag">
                                     <span> <img src="http://127.0.0.1:5501/Shine-Clone/html/image/creditcard1.png" alt=""></span>
                                     <span><img src="	http://127.0.0.1:5501/Shine-Clone/html/image/creditcard2.png" alt=""></span>
@@ -269,7 +269,7 @@
     
                                 <div>
                                     <p>CVV</p>
-                                    <input type="text" placeholder="012">
+                                    <input type="text" maxlength = "3" placeholder="012">
                                 </div>
                                 
             
@@ -333,4 +333,4 @@
 </body>
 </html>
 
-<script src="./scripts/payment.js" type="module"></script>
+<script src="../scripts/payment.js" type="module"></script>
