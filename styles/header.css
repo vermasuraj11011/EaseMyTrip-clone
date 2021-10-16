@@ -11,6 +11,7 @@
 
 .navbar {
     overflow: hidden;
+    display: flex;
     height: 4.9em;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
@@ -36,7 +37,6 @@
   }
   
    #signupLogin{
-       margin-left: 29em;
        margin-bottom: -2em;
    }
 
@@ -141,33 +141,40 @@
 }
 
 #helpline{
-    margin-left: 29em;
+    margin-left: 24%;
     margin-bottom: -2em;
-    margin-top: -0.5em;
+     
 }
 
 #helpline div{
     margin-top: -0.7em;
 }
 
-@media only  screen and (max-width:1360px){
+
+@media only  screen and (max-width:1390px){
   #helpline{
-    margin-left: 23%;
-    margin-top: 7px;
+    margin-left: 16.7%;
   }
 
-  #signupLogin{
-    margin-left: 23%;
+  
+}
+
+@media only  screen and (max-width:1360px){
+  #helpline{
+    margin-left: 14.7%;
+  }
+}
+
+@media only  screen and (max-width:1340px){
+  #helpline{
+    margin-left: 11.7%;
   }
 }
 
 @media only  screen and (max-width:1230px){
   #helpline{
-    margin-left: 13%;
-    margin-top: 7px;
+    margin-left: 12%;
   }
 
-  #signupLogin{
-    margin-left: 13%;
-  }
+   
 }

@@ -192,7 +192,7 @@ svg{
     font-size: 12px;
     line-height: 17px;
     font-weight:600;
-    margin-left: 14.8%;
+    margin-left: 17.8%;
     margin-top: -10px;
 }
 
@@ -217,7 +217,7 @@ svg{
     font-size: 12px;
     line-height: 17px;
     font-weight:600;
-    margin-left: 14%;
+    margin-left: 18%;
     margin-top: -10px;
 }
 
@@ -227,7 +227,7 @@ svg{
     font-size: 12px;
     line-height: 17px;
     font-weight:600;
-    margin-left: -36.5%;
+    margin-left: -34.5%;
     margin-top: -15px;
 }
 #arrivalDate{
@@ -236,7 +236,7 @@ svg{
     font-size: 12px;
     line-height: 17px;
     font-weight:600;
-    margin-left: 14.4%;
+    margin-left: 17.4%;
     margin-top: -15px;
 }
 #sourcerTerminal{
@@ -255,7 +255,7 @@ svg{
     font-size: 12px;
     line-height: 17px;
     font-weight:600;
-    margin-left: 79%;
+    margin-left: 80%;
     margin-top: -20px;
 }
 
@@ -561,8 +561,10 @@ svg{
     }
     
     #takeoffDate{
-        margin-left: -36.8%;
+        margin-left: -34.8%;
     }
+
+    
     #sourcerTerminal{
         margin-left: 29.5% ;
     }
