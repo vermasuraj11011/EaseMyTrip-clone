@@ -20,7 +20,7 @@ for that he or she has to enter his or her login id.
 
 
 
-<img src="https://user-images.githubusercontent.com/80845888/138562275-3f9c4cf8-09b2-4cda-8ca6-18a0ae849273.png" width="600" height="400" />
+<img src="https://user-images.githubusercontent.com/80845888/138562275-3f9c4cf8-09b2-4cda-8ca6-18a0ae849273.png" width="600" height="400" align="center"/>
 
 
 
