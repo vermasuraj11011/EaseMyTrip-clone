@@ -81,20 +81,18 @@ So, that was the proper flow of our project.
 > * City from **delhi** to **indore**
 - Their are some more data but please look in the json file before searching as the date and city combination should have to be exact match to get the result
 - Below is the object in which we have save the flight date.
-<p>
-{
-    "id": 4,
-    "airline_name": "Vistara",
-    "aircraft_number": 3820,
-    "takeoff_time": "10:33",
-    "landing_time": "12:29",
-    "journey_date": "2021-10-03",
-    "source": "Delhi",
-    "destination": "Surat",
-    "price": 4555,
-    "aircraft_code": "NA"
-}
-</p>
+>{
+>    "id": 4,
+>    "airline_name": "Vistara",
+>    "aircraft_number": 3820,
+>    "takeoff_time": "10:33",
+>    "landing_time": "12:29",
+>    "journey_date": "2021-10-03",
+>    "source": "Delhi",
+>    "destination": "Surat",
+>    "price": 4555,
+>    "aircraft_code": "NA"
+>}
 
 
 ## Thanks
