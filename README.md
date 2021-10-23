@@ -79,7 +79,7 @@ So, that was the proper flow of our project.
 > * City from **delhi** to **indore**
 - Their are some more data but please look in the json file before searching as the date and city combination should have to be exact match to get the result
 - Object formate of the date saved in the **flightData.json**.
-<p>
+><p>
  {<br>
     "id": 4,<br>
     "airline_name": "Vistara",   <br> 
@@ -92,7 +92,7 @@ So, that was the proper flow of our project.
     "price": 4555,   <br> 
     "aircraft_code": "NA"  <br>  
 }
-  </p>
+</p>
 
 
 
