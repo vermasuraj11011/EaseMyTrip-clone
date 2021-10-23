@@ -4,9 +4,7 @@ This is a clone of EaseMyTrip.com
 
 It is a trip booking website and we have tried to clone its **Flight Search** fuctionality.
 
-
 We have use **HTML**, **CSS**, **JavaScript**, **Express**, **MongoDB**, and **Mongoose** in this project.
-
 
 Our project is not resposive but fit to all desktop and laptop screen.
 
@@ -93,6 +91,7 @@ So, that was the proper flow of our project.
 >    "price": 4555,    
 >    "aircraft_code": "NA"    
 >}
+
 
 
 ## Thanks
