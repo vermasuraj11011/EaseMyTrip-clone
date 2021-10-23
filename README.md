@@ -17,9 +17,8 @@ We have tried to make our home page exact similar to the original one.
 On the home page user can register and login at the same time if comming on the page first time.
 for that he or she has to enter his or her login id.
 
-
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/80845888/138562275-3f9c4cf8-09b2-4cda-8ca6-18a0ae849273.png" width="600" height="400"/>
+  <img src="https://user-images.githubusercontent.com/80845888/138562275-3f9c4cf8-09b2-4cda-8ca6-18a0ae849273.png" width="300" height="200"/>
 </p>
 
 
