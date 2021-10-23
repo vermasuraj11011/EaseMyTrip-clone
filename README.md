@@ -31,6 +31,9 @@ for that he or she has to enter his or her login id.
 
 - On the **Index** page their is a search bar to search flight.
 
+![search](https://user-images.githubusercontent.com/80845888/138563351-e6ce4a6c-6b36-47a6-9511-7a6cc61c9d84.png)
+
+
 
 
 
