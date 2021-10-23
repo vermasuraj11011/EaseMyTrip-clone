@@ -80,18 +80,18 @@ So, that was the proper flow of our project.
 - Their are some more data but please look in the json file before searching as the date and city combination should have to be exact match to get the result
 - Object formate of the date saved in the **flightData.json**.
 <p>
-  >{
->    "id": 4,
->    "airline_name": "Vistara",    
->    "aircraft_number": 3820,    
->    "takeoff_time": "10:33",    
->    "landing_time": "12:29",    
->    "journey_date": "2021-10-03",    
->    "source": "Delhi",   
->    "destination": "Surat",    
->    "price": 4555,    
->    "aircraft_code": "NA"    
->}
+ {<br>
+    "id": 4,<br>
+    "airline_name": "Vistara",   <br> 
+    "aircraft_number": 3820,  <br>  
+    "takeoff_time": "10:33",    <br>
+    "landing_time": "12:29", <br>   
+    "journey_date": "2021-10-03",  <br>  
+    "source": "Delhi", <br>  
+    "destination": "Surat",  <br>  
+    "price": 4555,   <br> 
+    "aircraft_code": "NA"  <br>  
+}
   </p>
 
 
