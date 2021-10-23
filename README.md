@@ -72,7 +72,10 @@ So, that was the proper flow of our project.
 ## About dataBase
 
 - We have used **mongoDb** for our project
-- Before running the project please import the 
+- Before running the project please import the **flightData.json** file in your mongoDb.
+- And replace line on 8 **return mongoose.connect('mongodb://127.0.0.1:27017/easeMyTrip');** in the **server.js** with your local mongodb port address and the name of the dataBase were you have imported the flightData.json file.
+- Please keep range of the data in mind before searching it other wise sometime you may not get any result.
+> * Date from **2021-10-03** to **2021-10-08**
 
 
 {
