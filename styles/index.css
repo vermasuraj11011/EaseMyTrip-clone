@@ -678,7 +678,10 @@ a {
 	font-family: 'Open Sans', sans-serif, Tahoma, Arial;
 }
 /* Instruction Section */
-
+#search {
+    text-align: center;
+    margin: auto;
+}
 #InstructionMainDiv{
     margin: auto;
     text-align: center;
