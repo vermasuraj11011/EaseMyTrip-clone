@@ -214,6 +214,11 @@ a {
     padding: 2vw;
     color: white;
 }
+#search > div {
+    width: 1176px;
+    margin: auto;
+    margin-top: 8px;
+}
 #search_head {
     display: flex;
     justify-content: center;
